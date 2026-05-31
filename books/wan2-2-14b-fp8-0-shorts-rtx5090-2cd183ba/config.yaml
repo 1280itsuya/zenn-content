@@ -1,0 +1,11 @@
+title: "Wan2.2 14B fp8で毎日0円Shorts量産 RTX5090実戦"
+summary: "RTX5090 32GBにWan2.2 I2V-A14B fp8をoffloadゼロで載せ、毎朝7時にcronで5本のYouTube Shortsを電気代だけで量産する全手順。ComfyUI構成・VRAM実測・Whisper字幕・ffmpeg縦動画化・YouTube Data API自動投稿まで動くコードで一気通貫。14B採用の根拠と失敗ログも数値で公開し、再現性100%で同じ生成パイプラインを構築できる。"
+topics: ["ai", "python", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-rtx5090-32gb-wan2-2-14b-fp8-offload-1
+  - 02-2-a14b-5b-14b-fp8-rtx5090-vram-14b
+  - 03-3-comfyui-api-python-wan2-2-14b-9-16
+  - 04-4-whisper-bgm-wan2-2-14b-shorts
+  - 05-5-cron-7-14b-fp8-youtube-api-30
