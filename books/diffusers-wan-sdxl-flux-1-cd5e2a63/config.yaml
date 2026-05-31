@@ -1,0 +1,11 @@
+title: "Diffusers実務:Wan/SDXL/Flux を1コードで切替"
+summary: "Wan2.2・SDXL・Flux.1の生成APIをProvider Dispatchパターンで1つのジェネレータに統一する実装書。3モデルのpipeline引数差・VRAM要件・dtype地雷を吸収するレジストリ設計、ENV1行でのprovider切替、5090/32GBでの実測スループットとOOM回避まで、コピペで動くコードと失敗ログ付きで解説します。"
+topics: ["python", "ai", "stablediffusion", "machinelearning"]
+published: true
+price: 500
+chapters:
+  - 01-1-wan-sdxl-flux-12-1-generate
+  - 02-2-provider-python-protocol-sdxl-flux-wan
+  - 03-3-rtx5090-32gb-wan2-2-flux-1-vram-oom
+  - 04-4-env-yaml-provider-ci-seed
+  - 05-5-dtype-black-image-nan-3-8
