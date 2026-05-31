@@ -1,0 +1,11 @@
+title: "SDXL Turbo×Pinterest量産 NSFW誤検知37%を潰す実装"
+summary: "SDXL Turbo(1-4step)でPinterest用画像を日産300枚生成する自動パイプラインで、NSFW誤検知37%・著作権リコール7件・凍結2回を実際に踏んだ筆者が、誤検知を4%まで下げたフィルタ二段構成、プロンプト/LoRAの著作権汚染除去、メタデータ署名までをPython実装で全公開。コピペで動くasyncワーカーとしきい値表が手に入る。"
+topics: ["stablediffusion", "python", "automation", "ai", "mlops"]
+published: true
+price: 500
+chapters:
+  - 01-1-sdxl-turbo-1step-300-async
+  - 02-2-nsfw-37-4-clip-nsfw-image-detector
+  - 03-3-7-lora
+  - 04-4-2-pinterest-api
+  - 05-5-c2pa-ai
