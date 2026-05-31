@@ -1,0 +1,11 @@
+title: "VOICEVOX×yt-dlpでHatena記事を毎朝Podcast自動化"
+summary: "Hatenaブログ50記事をPython自動でVOICEVOX音声合成し、RSS生成→Spotify配信まで無人化する全コードを公開。yt-dlpでの素材取得、ffmpegでのラウドネス-16LUFS正規化、GitHub Actions毎朝6時実行、3週間運用でエラー率12%→0.8%へ下げた失敗ログと修正diffまで、手を動かせば即動く構成で学べます。"
+topics: ["python", "automation", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-6-hatena-3-spotify-0
+  - 02-2-yt-dlp-feedparser-hatena-rss-18
+  - 03-3-voicevox-engine-id-ffmpeg-16lufs-0-4
+  - 04-4-rss2-0-itunes-github-pages-spotify-3-d
+  - 05-5-github-actions-cron-6-3-21
