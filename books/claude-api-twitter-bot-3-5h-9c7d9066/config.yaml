@@ -1,0 +1,11 @@
+title: "Claude APIで作るTwitterノイズ自動ミュートBot：週3.5h削減"
+summary: "X(Twitter)のAPI v2 free枠とClaude Haiku 4.5を組み合わせ、興味のないツイートを自動判定してミュート・除外し、副業アカウントの情報収集を週3.5時間短縮する仕組みを構築します。Pythonの動くコード一式・月¥0運用のコスト内訳・3回の失敗と精度改善ログ付き。読み終えると自分用のノイズフィルタBotが今日動かせます。topics: [claude, ai, python, twitter, automation]"
+topics: ["claude", "ai", "python", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-72
+  - 02-2-x-api-v2-free-1-500-tweepy
+  - 03-3-claude-haiku-4-5-critic-refiner-4-1-2
+  - 04-4-github-actions-7-discord-0
+  - 05-5-3-5h
