@@ -1,0 +1,11 @@
+title: "Claudeで作るJS環境構築チェックリスト｜90分を10分にした47項目"
+summary: "ClaudeにVite+TypeScript+Biome+Vitestの初期構築を丸投げするための再利用プロンプトと47項目チェックリストを配布。個人開発のセットアップを実測90分→10分に短縮し、依存衝突・設定ドリフト・CI落ちの3大事故を回避する手順を、12回の失敗ログと生成テンプレ込みで提供する。読了後は自分のスタックを差し替えるだけで動く構築自動化セットが手元に残る。"
+topics: ["claude", "typescript", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-90-10-claude-47
+  - 02-2-claude-package-json-tsconfig-7
+  - 03-3-biome-eslint-prettier-6-1
+  - 04-4-12-esm-cjs-claude
+  - 05-5-github-actions-lint-test-build-3-ci
