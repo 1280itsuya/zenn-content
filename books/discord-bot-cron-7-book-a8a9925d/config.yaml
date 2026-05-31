@@ -1,0 +1,11 @@
+title: "Discord Bot×Cronで毎朝7時に自動化を可視化する監視Book"
+summary: "Python製Discord Bot(discord.py)とcrontab/Windowsタスクスケジューラを組み合わせ、自動化システムの稼働ログ・失敗回数・APIコスト・収益KPIを毎朝7時に1枚のEmbedで配信する運用ダッシュボードを構築する。Webhook化・冪等性・二重起動防止・無人課金ゼロ化まで、半年運用で得た失敗ログと数値をそのまま再現できるコードを提供する。"
+topics: ["discord", "python", "automation", "devops", "claudecode"]
+published: true
+price: 500
+chapters:
+  - 01-1-7-discord-embed-12
+  - 02-2-cron-api-2
+  - 03-3-discord-py-webhook-api-kpi-embed
+  - 04-4-api-22-discord
+  - 05-5-14-0
