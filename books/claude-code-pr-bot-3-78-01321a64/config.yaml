@@ -1,0 +1,11 @@
+title: "Claude CodeでPRレビューBotを作り3週間で指摘78件を自動化した運用ログ"
+summary: "個人開発のPRに常駐するAIレビューBotをClaude Code + GitHub Actionsで構築する実装書。差分取得からプロンプト設計、誤検知の潰し方、月額コストの試算まで全コードを掲載。3週間運用でレビュー指摘78件・手戻り工数を11時間削減した実測ログ付きで、読了後すぐ自分のリポジトリにBotを常駐させられる。"
+topics: ["claude", "claudecode", "githubactions", "python", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-pr-90-bot
+  - 02-2-git-diff-claude
+  - 03-3-42-9
+  - 04-4-github-actions-api-key-0
+  - 05-5-3-78-6-11
