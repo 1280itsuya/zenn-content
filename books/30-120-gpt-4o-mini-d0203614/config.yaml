@@ -1,0 +1,11 @@
+title: "月30本¥120で回すGPT-4o-mini記事半自動量産術"
+summary: "Python＋ローカル実行で、GPT-4o-miniをjudgeにしたCritic-Refinerループ・品質ゲート・A8.net計測リンク自動挿入・zenn-cli/WordPress同時投稿までを1本のパイプラインに統合。記事1本¥4・月30本¥120の実コストで、ボツ率や反映漏れまで数値報告。コピペで動くコードと.env設計を手に入れ、自分のアフィリ記事生成を今日から自動化できる。"
+topics: ["python", "llm", "automation", "claudecode", "agent"]
+published: true
+price: 500
+chapters:
+  - 01-1-1-4-30-120
+  - 02-2-gpt-4o-mini-judge-critic-refiner-18
+  - 03-3-a8-net-4
+  - 04-4-zenn-cli-wordpress-rest-api
+  - 05-5-github-actions-7-deploy-discord
