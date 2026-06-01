@@ -1,0 +1,11 @@
+title: "GPT-4o-mini judgeで自動執筆ループ｜30記事品質計測Python実装"
+summary: "GPT-4o-miniをjudgeに据えたCritic-Refinerループを200行のPythonで構築する手順を、コピペ可能なコードと共に解説。5軸スコアリング・しきい値リトライ・JSON構造化出力・コスト追跡を実装し、30記事サンプルで品質スコアが平均6.1→8.3に上がる過程と1記事¥1.2のコスト実測を公開。あなたの執筆パイプラインに即組み込めます。"
+topics: ["python", "llm", "openai", "ai", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-200-critic-refiner-30-6-1-8-3
+  - 02-2-gpt-4o-mini-judge-5-response-format-js
+  - 03-3-refiner-4
+  - 04-4-30-36-4
+  - 05-5-cron-slack-zenn-cli
