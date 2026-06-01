@@ -1,0 +1,11 @@
+title: "Zenn-cli×GitHub Actions 毎朝7時 記事自動deploy CI/CD"
+summary: "zenn-cliとGitHub Actionsで、Markdownを書いてpushするだけで毎日決まった時刻に記事・Bookを自動公開するCI/CDを作る実装書。cronトリガ・差分検知・textlint校正・OG画像生成・公開失敗時のSlack通知まで、コピペで動くworkflow yamlとPythonスクリプトを全掲載。著者が3週間で踏んだ7つの失敗と対処も数値で報告する。"
+topics: ["githubactions", "zenn", "ci", "python", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-push-7-yaml
+  - 02-2-zenn-cli-init-preview-ci-actions
+  - 03-3-schedule-cron-paths
+  - 04-4-textlint-og-ci
+  - 05-5-deploy-7-secrets-rate-limit-rollback-s
