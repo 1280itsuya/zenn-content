@@ -1,0 +1,11 @@
+title: "Civitai LoRA量産：30体投稿しBuzz3倍にした選定自動化"
+summary: "ComfyUI+Pythonでローカル生成した画像を、CLIP美的スコアとNSFW判定で自動選別し、Civitaiへ半自動投稿するパイプラインを実装します。LoRA30体・画像2,400枚を捌いた選定ロジック、Buzz獲得率が0.8%→2.4%へ伸びた失敗ログとサムネ最適化、API投稿スクリプト一式を持ち帰れます。"
+topics: ["python", "ai", "automation", "stablediffusion"]
+published: true
+price: 500
+chapters:
+  - 01-1-1-12
+  - 02-2-comfyui-2-400-json
+  - 03-3-clip-6-5-nsfw-python
+  - 04-4-civitai-api-bot-buzz0-8-2-4
+  - 05-5-5-cron-3-5
