@@ -1,0 +1,11 @@
+title: "AI副業自動化が動かない10原因をdoctor.jsで一括診断"
+summary: "Node.js製のAI自動化ツールが「Cannot find module」「undefined API key」で落ちる典型10原因を、自作doctor.jsで90秒一括診断します。Node/npm版ズレ、.env未読込、Playwrightブラウザ未取得、Windowsのパス・文字コード・実行ポリシーまで、コピペで動くチェック関数と修正コマンドを収録。原因特定に平均40分かけていたのを3分に短縮できます。"
+topics: ["playwright", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-doctor-js-10-90
+  - 02-2-node-18-20-22-npm-4-check
+  - 03-3-dotenv-api-undefined-5
+  - 04-4-playwright-headless-3-doctor
+  - 05-5-windows-path-10
