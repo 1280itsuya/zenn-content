@@ -1,0 +1,11 @@
+title: "Node製package.json生成CLI｜AI副業の雛形2026"
+summary: "package.jsonを手書きする時間を毎回約8分削る、配布可能なscaffold CLIをNodeでゼロから作る。Commander.jsの引数設計、npm scripts自動注入、esbuild/tsup/vitest/biomeの依存固定配線、npx配布とGitHub Actions公開まで一気通貫。読了後はnpx create-ai-kitで5ファイルを30秒生成でき、AI副業ツールの起点テンプレを自分の資産にできる。"
+topics: ["typescript", "ai"]
+published: true
+price: 500
+chapters:
+  - 01-1-npx-create-ai-kit-30-5
+  - 02-2-commander-js-clack-prompts-cli
+  - 03-3-package-json-scripts
+  - 04-4-esbuild-tsup-vitest-biome-devdependenc
+  - 05-5-npm-publish-github-actions-npx-ai
