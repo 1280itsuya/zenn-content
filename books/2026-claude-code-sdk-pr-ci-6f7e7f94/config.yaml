@@ -1,0 +1,11 @@
+title: "【2026】Claude Code SDKで自動PRレビューCI構築"
+summary: "GitHub Actions上でClaude Code SDKを走らせ、PR差分を自動レビューしインラインコメントを返すCIを実装する。コスト月$8運用、誤検知率を3週で42%→9%へ下げたプロンプト調整、レビュー漏れ7件の失敗報告まで、コピペで動くymlとPythonを丸ごと提供する。"
+topics: ["claudecode", "githubactions", "ci", "python", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-pr-claude-18-yml
+  - 02-2-claude-code-sdk-pr-query-git-diff
+  - 03-3-github-api-reviewcomments-4
+  - 04-4-42-9
+  - 05-5-8-pr
