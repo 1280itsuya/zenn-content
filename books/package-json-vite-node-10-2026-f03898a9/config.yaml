@@ -1,0 +1,11 @@
+title: "package.jsonで詰むVite+Nodeエラー10選2026"
+summary: "Vite 6 + Node.js 22 環境で新規プロジェクトが起動しない・ビルドが落ちる初期エラー10個を、実際のエラーメッセージ文字列から逆引きできる辞典として収録。type:module欠落やengines不一致、ESM/CJS混在などを修正前後のpackage.json差分とコマンド付きで提示し、平均15分で復旧できる状態を手に入れる。CIとDockerでだけ再現する罠も定量で解説する。"
+topics: ["javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-10-vite-6-node-22-5
+  - 02-2-cannot-use-import-statement-outside-a
+  - 03-3-engine-node-not-compatible-ebadengine
+  - 04-4-failed-to-resolve-import-the-cjs-build
+  - 05-5-10-package-json-npm-pkg-fix
