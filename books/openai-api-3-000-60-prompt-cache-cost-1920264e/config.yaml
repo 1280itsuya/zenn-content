@@ -1,0 +1,11 @@
+title: "OpenAI APIを月3,000円で記事60本量産するprompt cache設計とcost_tracker実装"
+summary: "GPT-4o-miniのprompt cacheでシステムプロンプト2,800トークンを毎回50%引きにし、tiktokenで全リクエストを記録するcost_trackerをSQLiteで実装する手順を解説。月60本生成で実測¥2,847に収めた設計をそのまま動かせます。キャッシュ未設計時¥9,200からの67%削減を再現し、超過時に自動停止する予算ガードまで構築できます。"
+topics: ["openai", "python", "api", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-cache-9-200
+  - 02-2-gpt-4o-mini-prompt-cache-1-024
+  - 03-3-tiktoken-usage-sqlite-cost-tracker-py
+  - 04-4-3-000-60
+  - 05-5-30-2-847
