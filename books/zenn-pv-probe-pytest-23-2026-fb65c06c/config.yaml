@@ -1,0 +1,11 @@
+title: "Zenn PV計測probeをpytestで守る23テスト設計2026"
+summary: "Zenn/Qiitaの取得PV・いいねをKPI CSVへ毎朝追記する計測probeを、本番を汚さず検証する手順を全コード付きで提供。HTML構造変化・0件取得・二重追記・型崩れの実際の事故4件を数値で再現し、pytest+responsesで23テストケースを設計。CI(GitHub Actions)で毎日自動回帰させる完成リポジトリが手に入る。"
+topics: ["python", "automation", "githubactions", "zenn"]
+published: true
+price: 500
+chapters:
+  - 01-1-calc-probe-py-30-kpi-csv-pv-1
+  - 02-2-probe-4-requests-mock
+  - 03-3-pytest-responses-23-parametrize
+  - 04-4-github-actions-7-probe
+  - 05-5-90-probe-3
