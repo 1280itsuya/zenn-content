@@ -1,0 +1,11 @@
+title: "AIにJS環境構築を丸投げ:案件初動を3時間→40分に"
+summary: "Claude/Copilotにvite+TypeScript+ESLintの初期構築を指示する具体プロンプト集と、AIが生成しがちな7つの破綻(依存バージョン不整合・存在しないAPI提案など)の回避手順を収録。コピペで動くプロンプトと検証スクリプトで、副業JS案件の環境構築を実測3時間から40分に短縮する手順を、失敗ログと所要時間の数値付きで再現できる。"
+topics: ["claude", "typescript", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-copilot-vite-40
+  - 02-2-claude-12-node-20
+  - 03-3-ai-7-api-eslintrc
+  - 04-4-copilot-todo
+  - 05-5-3
