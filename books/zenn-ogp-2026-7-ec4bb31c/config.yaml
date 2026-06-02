@@ -1,0 +1,11 @@
+title: "Zenn OGP/リンクカード完全修復2026 失敗7パターン"
+summary: "ZennのOGP画像が出ない・X(旧Twitter)カードが崩れる・リンクカードが裸URLになる――この3大事故を、zenn-cli検証コマンドとog:imageの1200x630px実寸、Playwrightでの自動スクショ検証まで含めて最短で潰す実装メモ。GitHub連携記事のmeta上書き、キャッシュ残留の強制更新、埋め込みが効かない外部サービス一覧を、実際に踏んだ7つの失敗と修正diffで提示。コピペで自分の記事の表示崩れを当日中に直せる。"
+topics: ["zenn", "typescript", "playwright", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-ogp-3-90-zenn-cli-curl
+  - 02-2-og-image-1200x630px-title-description
+  - 03-3-url-zenn-github-tweet-codepen
+  - 04-4-github-meta
+  - 05-5-playwright-ogp-ci-60
