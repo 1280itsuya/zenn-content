@@ -1,0 +1,11 @@
+title: "X副業情報フィルタ自動化：ミュート327語+API通知で1日18分削減"
+summary: "X(旧Twitter)のミュート単語327語テンプレとキーワードフィルタを設計し、副業・案件情報だけを残す。さらにX API v2+Tweepyで指定アカウントの新着を抽出、Claude Haikuで要約してDiscord/LINEへ通知するパイプラインをコピペで構築。タイムライン巡回1日62分→18分に短縮した手順と、API無料枠超過で月¥0に抑えた失敗報告まで再現可能に収録する。"
+topics: ["python", "automation", "claude", "api", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-x-327-62-18
+  - 02-2-x-api-v2-100-tweepy-0
+  - 03-3-claude-haiku-5-9
+  - 04-4-discord-line-haiku-3
+  - 05-5-30
