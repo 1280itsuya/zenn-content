@@ -1,0 +1,11 @@
+title: "年8万円得るふるさと納税×光熱費自動化:Python実装2026"
+summary: "源泉徴収票PDFから控除上限を秒算出するPythonスクリプト、地域×電力会社の単価をスクレイプして最安プランを判定するnotebook、Claudeで返礼品コスパを採点する関数まで、コピペで動く実装一式を提供。副業所得を含めた限度額の再計算ミスで2.4万円損した実例と、半年運用で電気代を月3,100円下げた検証データを定量公開。手を動かせば年8万円の家計防衛が再現できる。topics: [python, automation, claude, ai, llm]"
+topics: ["python", "automation", "claude", "ai", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-pdf-10-python
+  - 02-2-playwright
+  - 03-3-claude-api-30
+  - 04-4-vs
+  - 05-5-7-cron
