@@ -1,0 +1,11 @@
+title: "tsconfigエラーをClaudeで直すVSCodeテンプレ20選"
+summary: "Next.js/monorepoで頻発するtsconfig/jsconfigの解決不能パスエラー・型崩壊を、Claudeへ貼るだけで直る診断プロンプト20個と、コピペで効くVSCode設定テンプレ集として収録。paths解決失敗・extends地獄・project references崩壊を、再現コード→AI修正→検証コマンドの順で動かせるようになる。著者が3週間で潰した47件の失敗ログ付き。"
+topics: ["typescript", "nextjs", "claude"]
+published: true
+price: 500
+chapters:
+  - 01-1-paths-6-claude-5
+  - 02-2-extends-tsconfig-paths-tsconfig-base-3
+  - 03-3-monorepo-project-references-claude
+  - 04-4-jsconfig-vscode-settings-json-7
+  - 05-5-47-ci-tsc-noemit
