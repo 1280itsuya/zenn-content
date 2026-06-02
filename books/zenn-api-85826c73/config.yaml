@@ -1,0 +1,11 @@
+title: "Zenn統計を非公開APIで取得しダッシュボード化する実装"
+summary: "Zennには公式統計APIが無い。本書はDevToolsで特定した非公開JSONエンドポイント(/api/dashboard/articles等)とCookie認証(_zenn_session)の実体を全公開し、Playwrightでトークンを取得→Pythonで全記事のview/like/コメント数を日次収集→Next.js+RechartsのダッシュボードへGitHub Actionsで自動描画するコードを丸ごと提供。403/429回避とスキーマ破壊検知まで運用視点で扱う。"
+topics: ["zenn", "python", "playwright", "nextjs", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-view-1
+  - 02-2-devtools-zenn-7
+  - 03-3-zenn-session-cookie-playwright
+  - 04-4-python-sqlite
+  - 05-5-next-js-recharts-github-actions
