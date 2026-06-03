@@ -1,0 +1,11 @@
+title: "Vite7+ESMで詰む19箇所を潰す最短構築チェック"
+summary: "Viteで動かない・import落ちる・型が効かない初心者が踏む19の地雷を、エラーメッセージ別に逆引き。package.jsonのtype:module設定からvite.config.tsのpath alias、Vitest連携、本番buildで300KB削るまで、コピペで動く設定ファイル一式と各修正の前後比較を提示。2026年のVite7/Node22前提で15分で起動環境を完成させる。"
+topics: ["javascript", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-type-module-5-package-json
+  - 02-2-import-7-vite-config-ts-alias
+  - 03-3-tsconfig-json5-ts
+  - 04-4-vitest3-esm-9
+  - 05-5-build-js300kb-rollup
