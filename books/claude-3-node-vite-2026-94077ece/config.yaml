@@ -1,0 +1,11 @@
+title: "Claudeで3分構築｜Node+Vite初期セットアップ最短手順2026"
+summary: "Claude Codeに丸投げで止まる初期構築を、手戻りゼロの再現手順に変える1冊。Vite+TypeScript+React雛形を3分で立ち上げ、ESLint/Prettier/Vitest/CIまでをプロンプト1発で生成。Claudeが吐く設定の典型エラー11個を実エラーログ付きで潰し、コピペで動くテンプレと検証コマンドが手に入る。"
+topics: ["claude", "ai", "typescript", "react"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-3-vite-ts-react-1
+  - 02-2-claude-tsconfig-vite-config-11
+  - 03-3-eslint9-prettier-vitest-1
+  - 04-4-github-actions-ci-claude-lint-test-bui
+  - 05-5-claude-30
