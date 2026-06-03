@@ -1,0 +1,11 @@
+title: "Claude×X APIでSNSノイズ9割削除、収集を月20h短縮"
+summary: "X(旧Twitter)のタイムラインからノイズをClaude Haikuで自動分類し、ミュートリストを生成する仕組みを実装します。X API v2無料枠の実測値、1万件¥48の分類コスト、embeddingによる重複ニュース束ね、n8n+cronでの毎朝自動実行までを動くコードで提供。情報収集を月20h→3hに削減した3ヶ月の運用ログ付き。"
+topics: ["claude", "ai", "python", "automation", "llm"]
+published: false
+price: 500
+chapters:
+  - 01-340-claude-62-8
+  - 02-x-api-v2-playwright
+  - 03-claude-haiku-5-1-48
+  - 04-embedding-20h-3h
+  - 05-n8n-cron-7-3-rps
