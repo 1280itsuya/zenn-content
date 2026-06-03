@@ -1,0 +1,11 @@
+title: "Claude APIで月3万件処理する自動化パイプライン実装"
+summary: "Python+Claude API(claude-haiku-4-5/opus-4-8)で日次3万件の非構造データを処理する本番パイプラインをゼロから組む。tenacityでの429リトライ、Batches APIで費用を1/2、prompt cachingでヒット率82%、Pydanticでの構造化出力検証まで全コード付き。半年運用で月¥41,000→¥9,800へ削ったコスト設計を再現できる。"
+topics: ["claude", "python", "llm", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-3-python-claude-api-9-800
+  - 02-2-tenacity-429-529-99-7
+  - 03-3-pydantic-v2-tool-use-json
+  - 04-4-batches-api-prompt-caching-52
+  - 05-5-cron-discord
