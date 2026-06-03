@@ -1,0 +1,11 @@
+title: "クリック実測¥0基盤:/go?id=でKPIのclick列を自動加算する全手順"
+summary: "アフィリンクのクリック数が「不明」のまま記事を量産していませんか。本書は自前リダイレクタ /go?id= をFastAPI+SQLiteで構築し、302で本来のリンクへ飛ばす0.3秒以内に1クリックをKPIテーブルのclick列へ自動加算する経路を、コピペで動くコードと共に提供します。Bot除外・冪等化・日次集計までを月¥0インフラで運用し、GAでは取れない記事別CVを実測できるようになります。"
+topics: ["python", "fastapi", "automation", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-30-fastapi-go-id-302
+  - 02-2-click-1-sqlite-wal-upsert
+  - 03-3-bot-click-87-99
+  - 04-4-0-cloudflare-tunnel-systemd-go
+  - 05-5-click-note-zenn-roi
