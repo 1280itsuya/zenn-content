@@ -1,0 +1,11 @@
+title: "Claude×GitHub Actionsでテスト〜デプロイ〜Slack通知を完全自動化"
+summary: "GitHub Actionsのワークフローに Claude API を組み込み、pytest失敗ログの自動要約、デプロイ可否のAI判定、失敗時の修正PR自動起票、Slack/Discord通知までを一気通貫で動かすyamlとPythonを丸ごと提供。実測でCI失敗の一次対応を15分→2分に短縮した構成と、月¥1,200に収めたトークン課金の制御コードまで写経で再現できる。"
+topics: ["claude", "githubactions", "python", "ci", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-push-38-ai-slack-yaml
+  - 02-2-pytest-claude-haiku-92
+  - 03-3-main-claude-fly-io-vercel
+  - 04-4-ci-claude-gh-pr-create
+  - 05-5-1-200
