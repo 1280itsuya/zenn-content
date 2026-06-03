@@ -1,0 +1,11 @@
+title: "X自動ミュート500件｜Playwright+ClaudeでTL情報特化"
+summary: "X(旧Twitter)の副業タイムラインから雑音を消し情報収集特化にするスクリプトを実装。Playwrightで500件を10分で一括ミュート/ブロックし、Claude APIで『シグナル/ノイズ』を自動分類。ノイズ率42%→9%まで下げた運用ログ付き。API制限を回避するブラウザ自動化、誤ミュート復旧、cron常駐まで動くコードで解説します。"
+topics: ["playwright", "claude", "automation", "python", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-10-500-tl-42-9
+  - 02-2-playwright-tl
+  - 03-3-claude-haiku-1-0-001
+  - 04-4-1
+  - 05-5-cron-discord-7-tl
