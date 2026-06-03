@@ -1,0 +1,11 @@
+title: "Claude Code×GitHub Actionsで個人CIを月¥0で自動運転にする5章"
+summary: "Claude Code Actionをworkflowに組み込み、PRレビュー・テスト修正・コンフリクト解消を無人化する実装書。コピペで動くYAMLとプロンプト、トークン課金を月¥0〜数百に抑えるトリガ設計、3週間運用でCI失敗放置を42件→3件に減らした定量ログまで収録。読了後、自分のリポジトリにレビューBotを30分で常駐させられる。"
+topics: ["claudecode", "githubactions", "ci", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-30-claude-code-action-pr-claude-yaml
+  - 02-2-claude-ci-failure-allowed-tools
+  - 03-3-0-paths-concurrency
+  - 04-4-playwright-e2e-dependabot-claude-pr
+  - 05-5-3-ci-42-3
