@@ -1,0 +1,11 @@
+title: "X API v2でTL自動ミュート、収集を90分→18分にするBot"
+summary: "X API v2無料枠だけで動く通知ノイズ自動ミュートBotをPythonで構築。1,200語の動的ミュート辞書・副業情報スコアリング・月500投稿の取得上限回避まで実コード付きで解説。半年運用でTL閲覧を1日90分→18分に削減した設定値とつまずき箇所を全公開し、あなたの環境で即動かせる状態にします。"
+topics: ["python", "automation", "api", "ai", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-1-bot-tl-90-18-1-200
+  - 02-2-x-api-v2-free-1-tweepy-429
+  - 03-3-tf-idf-1-200
+  - 04-4-x-api-v2-mute-block
+  - 05-5-cron-github-actions-7-discord-0
