@@ -1,0 +1,11 @@
+title: "Zenn統計API×Python計測probe｜PV実数を3分でKPI DB自動記録"
+summary: "Zennの非公開統計APIをPythonで叩き、Book/記事のPV実数を毎朝SQLiteのKPI DBへ自動コミットするprobeを完成させます。Cookie認証の取得、JSONスキーマ崩れ時の例外設計、失敗時に落として再実行で自己回復するcron運用まで、コピペで動く実コードと運用2ヶ月分の失敗ログ付きで解説します。"
+topics: ["python", "automation", "zenn", "claudecode"]
+published: true
+price: 500
+chapters:
+  - 01-1-probe-py-30-zenn-pv-sqlite-1
+  - 02-2-cookie-15-playwright
+  - 03-3-pydantic-api
+  - 04-4-cron-systemd-exit-1-3-discord
+  - 05-5-kpi-db-pandas-book
