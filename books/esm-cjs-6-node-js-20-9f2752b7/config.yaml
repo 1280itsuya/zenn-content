@@ -1,0 +1,11 @@
+title: "ESM×CJS混在地獄を6パターンで撲滅するNode.js 20設定実践書"
+summary: "package.jsonにtype:moduleを足した瞬間に出るERR_REQUIRE_ESM/Cannot use import statementを、実際のエラーログ付きで6パターンに分類し全て解決します。tsconfig・package.json・拡張子(.mjs/.cjs)・条件付きexportsの正解設定をコピペ可能なdiffで提示。Vitest/tsx/esbuildのモジュール解決まで通し、新規セットアップを30分→3分に短縮できる状態を持ち帰れます。"
+topics: ["typescript", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-err-require-esm-6-diff
+  - 02-2-type-module-package-json-2
+  - 03-3-mjs-cjs-ts-tsconfig-module
+  - 04-4-tsx-vitest-esbuild-esm
+  - 05-5-cjs-esm-5-3
