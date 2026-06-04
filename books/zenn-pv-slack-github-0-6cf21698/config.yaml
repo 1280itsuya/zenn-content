@@ -1,0 +1,11 @@
+title: "Zenn PV差分を毎朝Slack通知｜GitHub無料枠で月0円運用"
+summary: "Zenn公式が出さない日次PV差分を、GitHub ActionsとPython 120行で毎朝7時にSlack/Discordへ自動通知する仕組みを完コピで構築できます。記事別の前日比・週次トレンド・伸びた記事TOP3を可視化し、月0円のActions無料枠で半年運用した実測コストと失敗3件まで公開。読了後は自分のZennアカウントで即動かせます。"
+topics: ["zenn", "githubactions", "python", "automation", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-7-discord-pv-120-build-report-py
+  - 02-2-zenn-api-articles-json-requests-pv
+  - 03-3-sqlite-pv-csv
+  - 04-4-github-actions-cron-jst7-utc-workflow
+  - 05-5-180-3-actions-1-2-vps
