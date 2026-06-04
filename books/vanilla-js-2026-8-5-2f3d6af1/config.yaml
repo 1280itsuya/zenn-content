@@ -1,0 +1,11 @@
+title: "ビルド無しVanilla JS 2026:最短8秒で配信し罠5つを潰す"
+summary: "Vite/webpackを捨て、script type=moduleだけで本番配信する全手順を実演します。CORS・MIME・キャッシュ・importパスなど現場で必ず踏む5つの罠を実測ログ付きで再現し回避。Python http.serverでの起動から、120行のJSをCDN化して理解〜配信完了=8分／配信コマンド最短=8秒で本番反映するまで、コピペで動くコードと設定値だけを渡します。"
+topics: ["javascript", "typescript", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-npm-init-120-js-type-module-8
+  - 02-2-file-cors-6-4
+  - 03-3-mime-js-text-plain-content-type
+  - 04-4-importmap-cdn
+  - 05-5-6-vite-type-module-ttfb
