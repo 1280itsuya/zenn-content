@@ -1,0 +1,11 @@
+title: "Vite+Node .env地雷17個を10分で潰すチートシート2026"
+summary: "import.meta.envがundefined、VITE_接頭辞忘れ、本番ビルドで値が消える――Vite+Node環境変数の頻出エラー17個を再現コードと修正diffで即解決。dotenv多重読み込み・型安全化(zod)・CI/Cloudflare Pagesでのsecret注入まで、コピペで動く.env設計テンプレを手に入れる実務直結の一冊。"
+topics: ["typescript", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-import-meta-env-undefined-5-diff
+  - 02-2-vite-env-mode-env-production-local
+  - 03-3-node-dotenv-vite-1
+  - 04-4-zod-envschema
+  - 05-5-cloudflare-pages-vercel-github-actions
