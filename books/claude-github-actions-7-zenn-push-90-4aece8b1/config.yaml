@@ -1,0 +1,11 @@
+title: "Claude生成記事をGitHub Actionsで毎朝7時にZenn自動pushする90行構成"
+summary: "Claudeが書いた記事を人手ゼロでZennへ公開する最小GitHub Actions構成を、実際に動く90行のworkflow.ymlごと配布。zenn-cli連携・GITHUB_TOKEN権限・slug衝突・空コミット失敗の4大ハマりを実エラーログ付きで解決し、月¥0で毎朝7時に自動公開する仕組みを30分で再現できる。13回失敗した実運用ログと安全停止スイッチも収録。"
+topics: ["githubactions", "claude", "zenn", "automation", "ci"]
+published: true
+price: 500
+chapters:
+  - 01-1-90-workflow-yml-7-claude
+  - 02-2-zenn-cli-github-token-permissions-cont
+  - 03-3-slug-push-13-git-diff-quiet
+  - 04-4-claude-pass-7-6-draft-llm-as-judge
+  - 05-5-0-discord-kill-switch
