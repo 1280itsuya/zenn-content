@@ -1,0 +1,11 @@
+title: "Node/ブラウザ切り分けで直すAI副業ツール不動5パターン"
+summary: "Claude APIやPlaywright製の自動投稿ツールが「動かない」原因の9割はJS設定です。process.env消失・ESM/CJS混在・CORS・fetch多重定義・tree-shaking削除の実例5パターンを、再現コードとEXPLAIN的なログ判定付きで解説。30分のデバッグを3分に短縮する切り分けフローチャートと、コピペで動く最小修正diffが手に入ります。"
+topics: ["javascript", "claude", "automation", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-env-undefined-3-2
+  - 02-2-esm-cjs-require-package-json-type
+  - 03-3-fetch-node18-undici
+  - 04-4-playwright-headless-csp-5
+  - 05-5-tree-shaking-claude-sdk-cors-vite-esbu
