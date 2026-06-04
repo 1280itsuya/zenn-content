@@ -1,0 +1,11 @@
+title: "Claude Codeでpackage.json/tsconfig/ESLintを3分自動生成するCLI自作"
+summary: "Node環境構築で7割が詰まるpackage.json・tsconfig.json・eslint.config.jsの3設定を、Claude Code Agent SDKに投げて自動生成・自動修正するCLI『envfix』を一緒に作ります。手動30分→3分、ESLint/TS設定起因のエラー42件を自動解消した実測ログ、プロンプト全文、失敗時の差し戻し処理まで動くコードで配布。読めば自分のチーム雛形を量産するCLIが手に入ります。"
+topics: ["claudecode", "typescript", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-30-3-envfix-init-3
+  - 02-2-claude-code-agent-sdk-package-json-0
+  - 03-3-tsconfig-json-tsc-noemit-42
+  - 04-4-eslint-flat-config-eslint-config-js-ty
+  - 05-5-envfix-npm-publish-github-actions-cli
