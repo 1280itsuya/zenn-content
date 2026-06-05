@@ -1,0 +1,11 @@
+title: "X自動ミュートAI：Claudeで月3,200語ノイズ除去"
+summary: "Xのタイムラインを汚す宣伝・煽り・スパムをClaude APIで自動判定し、ミュートワードとミュートアカウントをPlaywrightで無人投入する仕組みを構築する実装書。半年運用でTL内ノイズ投稿を42%→6%へ削減した設定値・プロンプト・cron全文を公開。コピペで動くPython一式と、誤ミュート率を1.8%に抑えたしきい値調整まで手元で再現できる。"
+topics: ["claude", "python", "automation", "api"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-playwright
+  - 02-2-claude-7-1-8
+  - 03-3-playwright-x-ban
+  - 04-4-cron-7-discord
+  - 05-5-42-6
