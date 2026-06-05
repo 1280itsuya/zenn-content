@@ -1,0 +1,11 @@
+title: "Vite+ESM設定エラー37個を最短5分で潰すtsconfig実戦集2026"
+summary: "Vite 5/6+ESM移行で実際に踏んだtsconfig/jsconfig起因のエラー37個を、エラーメッセージ全文→原因→コピペで効く最小diffの3点セットで収録。moduleResolution: bundler、verbatimModuleSyntax、paths解決、allowImportingTsExtensions、__dirname消失まで網羅。検索で原因にたどり着けず溶かす時間をゼロにし、CIが緑になる設定一式を手に入れる。"
+topics: ["typescript", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-vite-6-esm-cannot-find-module-err-modu
+  - 02-2-moduleresolution-bundler-vs-node16-4
+  - 03-3-paths-alias-tsconfig-paths-vite-tsconf
+  - 04-4-jsconfig-json-js-vite-esm
+  - 05-5-ci-github-actions-tsc-noemit-vite-buil
