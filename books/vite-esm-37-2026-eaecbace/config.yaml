@@ -1,0 +1,11 @@
+title: "Vite+ESM設定エラー37件を最短解決する逆引き2026"
+summary: "Vite 5/6 + ESM環境でtsconfig.json・jsconfig.jsonが原因の37個のエラー（ERR_MODULE_NOT_FOUND、moduleResolution不一致、paths解決失敗、verbatimModuleSyntax衝突等）を、エラー文字列→原因→最小修正diffの逆引き表で解決。コピペで動くtsconfig.jsonテンプレ4種（React/Node/Library/Monorepo）と、CIで設定崩れを検知するtsc --noEmit + Viteビルド検証ymlが手に入る。"
+topics: ["typescript", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-tsconfig-json-react-node-library-monor
+  - 02-2-moduleresolution-node-node16-bundler-1
+  - 03-3-paths-baseurl-vite-tsconfig-paths-9
+  - 04-4-jsconfig-json-jsdoc-ts-8
+  - 05-5-ci-tsc-noemit-vite-yml-phpstan
