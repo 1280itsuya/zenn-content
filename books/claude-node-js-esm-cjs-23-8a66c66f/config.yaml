@@ -1,0 +1,11 @@
+title: "ClaudeでNode.js ESM/CJSエラーを潰す23プロンプト"
+summary: "ERR_REQUIRE_ESM・Cannot use import statement・__dirname undefined等、Node.jsのCJS/ESM混在で発生する典型23エラーを、原因切り分けからpackage.jsonのtype・exports修正までClaudeに一発診断させる実プロンプトを収録。コピペ可能なプロンプト全文とBefore/After設定、誤診を防ぐコンテキスト添付テンプレを提供。tsx/ts-node/Jest/Viteの実プロジェクトで検証済みの解決手順を、貼るだけで再現できます。"
+topics: ["claude", "typescript", "ai", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-err-require-esm-30-3
+  - 02-2-cannot-use-import-statement-outside-a
+  - 03-3-dirname-require-is-not-defined-esm
+  - 04-4-package-json-exports-main-type-claude
+  - 05-5-tsx-vite-jest-claude
