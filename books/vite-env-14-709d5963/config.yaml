@@ -1,0 +1,11 @@
+title: "Vite env地雷14選｜本番で環境変数が消える事故の即デバッグ"
+summary: "Viteのimport.meta.env/モード/define周りで個人開発者が実際に踏んだ14の地雷を、再現コード・誤った設定・修正diffの3点セットで解説。VITE_接頭辞漏れ、ビルド時インライン化、.env.productionの読み込み順、Dockerで値が空になる事故を、最短で原因特定する診断フローとともに自分の手で潰せるようになる。"
+topics: ["typescript", "docker", "react"]
+published: true
+price: 500
+chapters:
+  - 01-1-env-5-vite-3
+  - 02-2-vite-import-meta-env-process-env-5-und
+  - 03-3-env-env-production-local-4-loadenv
+  - 04-4-define-3
+  - 05-5-14-env-ci-validate-env
