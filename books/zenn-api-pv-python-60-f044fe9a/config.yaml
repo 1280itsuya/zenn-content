@@ -1,0 +1,11 @@
+title: "Zenn統計API直叩き｜PV自動収集Python実装で60日運用"
+summary: "Zenn非公開の統計JSONエンドポイント(/api/dashboard/articles等)をrequestsで直叩きし、全記事のPV・いいね・フォロワー増減を毎朝SQLiteへ蓄積するprobeを実装する。Cookie認証の取得、429レート制限の回避、cron常駐、増分差分の検出までコードを写経でき、60日運用で得た取得失敗率3.2%→0.4%の改善ログも公開する。"
+topics: ["python", "zenn", "automation", "api"]
+published: true
+price: 500
+chapters:
+  - 01-1-get-api-dashboard-articles-pv-json-15
+  - 02-2-playwright-cookie-zenn-session
+  - 03-3-429-ban-sleep-rps-0-5
+  - 04-4-sqlite-pv
+  - 05-5-cron-discord-webhook-7
