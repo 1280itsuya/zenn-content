@@ -1,0 +1,11 @@
+title: "Zenn非公式統計API×Python自動KPI集計｜失効Cookie自己回復で運用半年無停止"
+summary: "ZennのダッシュボードAPIをPlaywright＋requestsで非公式に叩き、view/like/購買を毎朝SQLiteへ自動コミットするKPIパイプラインを実装する。403を出す失効Cookieをheadless再ログインで自己回復させる再試行設計、レート制御、GitHub Actions常駐まで動くコードで提供。半年運用で手集計を週90分→0分にした構成をそのまま再現できる。"
+topics: ["python", "automation", "playwright", "zenn", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-zenn-json-15-devtools-requests-book-1
+  - 02-2-403-2-cookie-playwright
+  - 03-3-api-ban-0-4-jst7-etag-1
+  - 04-4-sqlite-pandas-kpi-view-cvr-insert
+  - 05-5-github-actions-7-secrets-discord
