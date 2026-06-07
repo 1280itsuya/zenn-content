@@ -1,0 +1,11 @@
+title: "Zenn統計API直叩き｜PV/いいね自動収集Python probe実装"
+summary: "Zennダッシュボードの非公開統計JSONエンドポイントを特定し、requests+httpxで全記事のPV・いいね・コメントを毎朝自動収集するPython probeを完成させます。Cookie認証の突破、429レート制限の回避、SQLite差分保存、GitHub Actionsでの無料常駐、Discord通知まで、コピペで動く実コードと運用半年の数値を提示。手動集計を月0分にします。"
+topics: ["python", "zenn", "automation", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-network-zenn-json-3-14
+  - 02-2-cookie-httpx-probe-host-session
+  - 03-3-429-3-5
+  - 04-4-sqlite-pandas-pv
+  - 05-5-github-actions-7-discord-pv
