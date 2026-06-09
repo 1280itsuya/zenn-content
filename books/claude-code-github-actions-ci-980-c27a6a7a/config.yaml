@@ -1,0 +1,11 @@
+title: "Claude Code×GitHub ActionsでCI全自動化｜月¥980実装書"
+summary: "Claude CodeをGitHub Actionsへ組み込み、PRレビュー→pytest→本番デプロイ→Discord通知までを無人化する完全実装書。実際のworkflow.ymlとAnthropic APIコストの月次明細を全公開。3回の失敗で¥1,400溶かした原因と回避策まで、コピペで動く構成を手に入る。"
+topics: ["claudecode", "githubactions", "ci", "devops", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-code-pr-12
+  - 02-2-anthropic-claude-code-pr1-3-2
+  - 03-3-pytest-playwright-e2e-job
+  - 04-4-discord-slack-url-mention
+  - 05-5-1-400-3-secrets
