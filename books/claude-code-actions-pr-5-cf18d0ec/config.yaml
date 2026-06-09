@@ -1,0 +1,11 @@
+title: "Claude Code×ActionsでPRレビューを月$5自動運転"
+summary: "Claude Code GitHub Actionsで、個人開発リポジトリのPRに自動でレビューコメント・失敗テスト修正案・要約を返すCIを構築します。コピペで動くymlとプロンプト、トークン消費とドル単価の実測、無限ループ・誤承認・コスト爆発の失敗3例と回避策まで収録。読了後、自分のリポに最短30分で自動レビューBotを常駐できます。"
+topics: ["claudecode", "githubactions", "ai", "devops", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-30-claude-code-action-yml-pr
+  - 02-2-claude-opus-4-haiku
+  - 03-3-pr-main-actions
+  - 04-4-5
+  - 05-5-oss
