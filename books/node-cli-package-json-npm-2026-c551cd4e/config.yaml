@@ -1,0 +1,11 @@
+title: "Node製CLIでpackage.json自動生成｜npm公開2026"
+summary: "commander+Claude APIで、対話やJSON指定からpackage.json・tsconfig・biome設定を一括生成するNode製CLIをゼロから作り、npmへ公開するまでを実装します。雛形を一度作れば新規プロジェクトの初期設定が15分→40秒に短縮。コピペ可能なコードと、Gumroad有料テンプレ販売へ転用する導線設計まで、AI副業の起点になる再利用可能な成果物が手に入ります。"
+topics: ["javascript", "typescript", "claude"]
+published: true
+price: 500
+chapters:
+  - 01-1-pkg-gen-40-npx
+  - 02-2-commander-vs-oclif-vs-yargs-3
+  - 03-3-claude-api-react-dependencies
+  - 04-4-npm-publish-scoped-package-semver-ci
+  - 05-5-5-gumroad-a8
