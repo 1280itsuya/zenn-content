@@ -1,0 +1,11 @@
+title: "AI副業ツールが動かない原因はJS設定5選/Node切り分け術"
+summary: "ChatGPT/Claude製の自動化スクリプトが「ローカルでは動くのに本番で落ちる」典型5パターンを、ESM/CJS混在・tsconfig moduleResolution・Playwrightのheadless差異・fetch undefined・package.json type欠落として再現コード付きで解剖。Node環境とブラウザ環境を5分で切り分けるデバッグ手順とコピペ可能な診断スクリプトを提供し、エラー解決の試行回数を実測で減らせるようになる。"
+topics: ["javascript", "typescript", "claude", "playwright"]
+published: true
+price: 500
+chapters:
+  - 01-1-ai-3-5
+  - 02-2-esm-cjs-require-is-not-defined-package
+  - 03-3-tsconfig-moduleresolution-claude-ts-4
+  - 04-4-playwright-headless-node
+  - 05-5-fetch-undefined-dotenv-node20
