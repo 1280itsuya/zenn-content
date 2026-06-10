@@ -1,0 +1,11 @@
+title: "Node.js ESM/CJSエラーをClaudeで30秒診断する47プロンプト"
+summary: "ERR_REQUIRE_ESM・Cannot use import statement・__dirname undefined等、Node.jsのCommonJS/ESM起因エラー47種を、エラー全文を貼るだけで原因と修正diffをClaude/ChatGPTに一発出力させる実証済みプロンプト集。半年で延べ300回詰まった筆者が、平均切り分け18分→40秒に短縮したテンプレと、package.jsonのtype・exports・tsconfig moduleの設定早見表をコピペで配布する。"
+topics: ["javascript", "typescript", "claudecode", "ai"]
+published: true
+price: 500
+chapters:
+  - 01-1-err-require-esm-claude-30-1
+  - 02-2-package-json-type-exports-main-3
+  - 03-3-import-require-20
+  - 04-4-typescript-tsconfig-modulenext-claude
+  - 05-5-47-claude-code-github-actions
