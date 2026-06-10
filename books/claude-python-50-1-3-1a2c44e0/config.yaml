@@ -1,0 +1,11 @@
+title: "Claude×Python半自動化｜月50本アフィリ記事を1本3円で量産する全コード"
+summary: "Claude API・requests・Markdownテンプレを組み合わせ、ローカルPythonでアフィリ記事を半自動量産する個人開発パイプラインを完コピできます。トピック収集→草稿生成→タイトル/本文一致検証→アフィリリンク自動差込→Zenn/WordPress投稿までの動くコードと、50本運用で得た原価・スパム判定回避・収益の実数を全公開。CrontabとDiscord通知で毎朝7時に無人実行する構成まで手に入ります。"
+topics: ["python", "claude", "automation", "llm", "zenn"]
+published: true
+price: 500
+chapters:
+  - 01-1-1-3-draft-3-2
+  - 02-2-claude-api-writer-py-3-temperature
+  - 03-3-verifier-py-llm-as-judge-5
+  - 04-4-affiliate-py-a8-3
+  - 05-5-poster-py-crontab-7-zenn-cli-wordpress
