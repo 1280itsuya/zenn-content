@@ -1,7 +1,7 @@
 title: "Claude×X APIでSNS情報収集を週14h→2hに圧縮する自動ミュート術"
 summary: "X(旧Twitter)のタイムラインをClaude Haikuで毎朝自動分類し、ノイズを自動ミュート、有益投稿だけをDiscordへ要約配信するパイプラインを構築します。半年運用で情報収集を週14時間→2時間に削減した実コードと、月API課金¥380に抑えたモデル選定・失敗の数値まで全公開。副業アカウントを片手間で回す自動化基盤が手に入ります。"
 topics: ["claude", "ai", "python", "automation", "llm"]
-published: false
+published: true
 price: 500
 chapters:
   - 01-7-digest-14h-2h

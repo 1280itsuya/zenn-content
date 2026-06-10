@@ -3,7 +3,7 @@ title: "Claude×X APIでSNS情報収集を週14h→2hに圧縮する自動ミュ
 emoji: "📘"
 type: "tech"
 topics: ["ai", "automation"]
-published: false
+published: true
 ---
 
 ```markdown

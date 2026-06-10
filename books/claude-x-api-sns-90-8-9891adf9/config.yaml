@@ -1,7 +1,7 @@
 title: "Claude×X APIでSNS収集を90分→8分にした自動ミュート術"
 summary: "Xのタイムラインを毎日90分手作業で追っていた副業アカウント運用を、Claude＋X API＋cronで8分の自動ダイジェストに圧縮した全コードを公開。ノイズ投稿をLLMでスコアリングして自動ミュート、有益情報だけDiscordに要約配信する仕組みを、月額コストと判定精度の実測値つきで再現できます。"
 topics: ["claude", "automation", "python", "llm", "agent"]
-published: false
+published: true
 price: 500
 chapters:
   - 01-1-90-8

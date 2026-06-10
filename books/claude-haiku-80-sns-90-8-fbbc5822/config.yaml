@@ -1,7 +1,7 @@
 title: "Claude Haikuで月¥80・SNS情報収集を90分→8分に"
 summary: "X(旧Twitter)とBlueskyのタイムラインをClaude Haikuで分類し、ノイズを自動ミュート、必要情報だけをDigest化する副業アカウント運用パイプラインを丸ごと構築します。API直叩き＋Playwrightミュート＋GitHub Actions定時実行のコードを全公開。半年運用で収集時間90分→8分、API費は月¥80。コピペで自分のアカウントに移植でき、ノイズ判定の精度チューニングと失敗の数値報告まで再現できます。"
 topics: ["claude", "python", "automation", "llm", "playwright"]
-published: false
+published: true
 price: 500
 chapters:
   - 01-1-90-8-api-80-1-2

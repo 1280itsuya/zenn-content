@@ -3,7 +3,7 @@ title: "Claude Haikuで月¥80・SNS情報収集を90分→8分に (無料版)"
 emoji: "📘"
 type: "tech"
 topics: ["ai", "automation"]
-published: false
+published: true
 ---
 
 ```markdown

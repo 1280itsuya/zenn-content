@@ -3,7 +3,7 @@ title: "Claude×X APIでSNS収集を90分→8分にした自動ミュート術 (
 emoji: "📘"
 type: "tech"
 topics: ["ai", "automation"]
-published: false
+published: true
 ---
 
 ```markdown
