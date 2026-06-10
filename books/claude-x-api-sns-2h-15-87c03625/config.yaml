@@ -1,0 +1,11 @@
+title: "Claude×X APIでSNS収集を日2h→15分にする副業自動化"
+summary: "ClaudeでXタイムラインのノイズを自動分類・ミュートし、情報収集を日次2時間から15分へ圧縮する実コードを配布。Playwrightでの取得、LLM判定のプロンプト、誤ミュート率を11%→1.8%へ下げたチューニング、副業アカウント運用に流す要約パイプラインまで、コピペで動くリポジトリ込みで再現できます。"
+topics: ["claude", "automation", "python", "llm", "agent"]
+published: false
+price: 500
+chapters:
+  - 01-1-claude-15
+  - 02-2-playwright-x-api-v2-tl-429-0
+  - 03-3-11-1-8-claude-few-shot
+  - 04-4-github-actions-cron-7-slack
+  - 05-5-1
