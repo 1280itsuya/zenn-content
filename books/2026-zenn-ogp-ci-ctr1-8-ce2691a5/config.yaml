@@ -1,0 +1,11 @@
+title: "【2026】Zenn OGP自動生成CIでCTR1.8倍の実装メモ"
+summary: "Zenn記事のOGP画像・リンクカード・埋め込みが崩れてCTRを損する問題を、satori+Playwrightで自前OGPを自動生成し、GitHub Actionsで全記事を検証・キャッシュ破棄まで自動化する手順書。コピペで動くTypeScript一式と、20記事でOGP適正化前後のクリック率を実測した数値を収録。公開前に崩れを0件にできます。"
+topics: ["zenn", "githubactions", "typescript", "playwright", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-satori-playwright-ogp
+  - 02-2-zenn-slug-ogp-7
+  - 03-3-github-actions-ogp-ci
+  - 04-4-ogp-20-ctr
+  - 05-5-7-ogp-ctr
