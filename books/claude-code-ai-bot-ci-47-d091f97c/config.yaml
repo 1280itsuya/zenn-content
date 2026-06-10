@@ -1,0 +1,11 @@
+title: "Claude Codeで作るAIレビューBot：CI常駐で重大バグ47件検出"
+summary: "Claude Code+GitHub ActionsでPR自動レビューBotを構築し、個人開発の品質ゲートにする実装書。.env秘匿、差分のみ送信のトークン圧縮、Severityラベル自動付与、レビュー失敗時のCIブロックまで丸ごと再現可能。3ヶ月運用でAPIコスト月¥420・重大バグ47件検出した実数ログと、誤検知を減らすプロンプト改善の全試行を公開する。"
+topics: ["claudecode", "githubactions", "ai", "devops", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-bot-pr-5-420
+  - 02-2-github-actions-claude-code-env-pull-re
+  - 03-3-9-git-diff-severity
+  - 04-4-critical-ci-exit-code
+  - 05-5-3-47-11-420
