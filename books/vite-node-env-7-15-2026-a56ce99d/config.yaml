@@ -1,0 +1,11 @@
+title: "Vite+Node .envで詰む7原因を最短15分で潰すチートシート2026"
+summary: "VITE_接頭辞漏れ・import.meta.env／process.envの取り違え・ビルド時埋め込みによるDocker事故など、Vite+Node構成の.envで実務者が必ず踏む7つの罠を、コピペ可能なvite.config.ts/型定義/loadEnvスニペットで即解決。半年で延べ40回・約9時間溶かした失敗の切り分けフローと、本番で秘密鍵をクライアントへ漏らさない検証手順まで、手を動かして30分で恒久対策できる。"
+topics: ["typescript", "react", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-7-env-vite-config-ts
+  - 02-2-vite-undefined-env-4
+  - 03-3-import-meta-env-vs-process-env-ssr-nod
+  - 04-4-docker-ci
+  - 05-5-env-git-env-example
