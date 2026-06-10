@@ -1,0 +1,11 @@
+title: "Claudeに環境構築を丸投げ｜JS副業の初動を3.5h→40分に"
+summary: "Vite+TypeScript+React+Playwrightの初期構築をClaude CodeとCopilotへ丸投げし、副業案件の初動を実測3.5時間から40分へ短縮する手順書。動くプロンプト雛形、.env地獄・型エラー・CI落ちの回避コード、12案件で踏んだ失敗と損失額を全公開。読了後は自分のテンプレリポジトリを生成し納品初速を最大化できる。topics欄に claude / typescript / vite / react / playwright を明示。"
+topics: ["claude", "typescript", "react", "playwright"]
+published: true
+price: 500
+chapters:
+  - 01-1-3-5h-40
+  - 02-2-claude-code-7
+  - 03-3-env-vite-import-meta-env-ai
+  - 04-4-playwright-e2e-github-actions-ci-ai
+  - 05-5-12-ai-18-400
