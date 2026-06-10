@@ -1,0 +1,11 @@
+title: "OpenAI APIを月3000円で記事60本｜prompt cache設計とcost_tracker実装"
+summary: "gpt-4o-miniとプロンプトキャッシュを前提に、1記事あたり約50円で60本を量産する設計を、動くPythonコードで配布します。トークン会計クラスcost_trackerでモデル別・キャッシュ別に原価を実測し、月3000円の予算上限を自動で守るゲートを実装。失敗7件と請求額の推移込みで、明日から自分のパイプラインに移植できる状態を目指します。"
+topics: ["openai", "python", "llm", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-3000-60-cost-tracker-py
+  - 02-2-system-4kb-cached-input-0-80-prompt-ca
+  - 03-3-60-generator-tenacity-batch-api
+  - 04-4-3000-budget-guard-api
+  - 05-5-7-31-18
