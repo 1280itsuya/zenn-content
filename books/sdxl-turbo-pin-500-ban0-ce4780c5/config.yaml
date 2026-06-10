@@ -1,0 +1,11 @@
+title: "SDXL TurboでPin画像を日500枚量産しBAN0にした実装"
+summary: "SDXL Turbo(steps4)でPinterest投稿画像を日500枚量産する自動化を半年運用し、NSFW誤検知率17.4%→2.3%、著作権・商標起因のスパム判定によるアカウント警告を月6件→0件まで潰した全コードを公開。CLIPベースNSFWスコアの二段ゲート、プロンプトから商標/作家名を機械的に除去する正規表現辞書、Pinterest API投稿の429リトライ設計まで、コピペで動く実装で解説します。"
+topics: ["stablediffusion", "python", "ai", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-sdxl-turbo-steps4-1-0-4-500
+  - 02-2-clip-nsfw-17-4-2-3
+  - 03-3
+  - 04-4-pinterest-api-429
+  - 05-5-pv-github-actions
