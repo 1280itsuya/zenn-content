@@ -1,0 +1,11 @@
+title: "Vite+ESMのtsconfig設定エラー47件をエラー文逆引きで即修正する2026年版"
+summary: "Vite 6/7とESM移行で実際に踏んだtsconfig/jsconfigエラー47件を、出たエラー文字列から該当行へ直行できる逆引きチートシートにした。moduleResolution: bundler、verbatimModuleSyntax、paths未解決、__dirname消失などをコピペ可能な最小diffで提示。さらにClaude Codeに型エラーを一括修正させるプロンプトと、tscの差分をCIで止める設定まで動かせる。"
+topics: ["typescript", "claudecode", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-vite-7-esm-tsconfig-10
+  - 02-2-moduleresolution-bundler-module-esnext
+  - 03-3-paths-baseurl-vite-vite-tsconfig-paths
+  - 04-4-dirname-json-import-top-level-await-es
+  - 05-5-claude-code-tsconfig-github-actions-ci
