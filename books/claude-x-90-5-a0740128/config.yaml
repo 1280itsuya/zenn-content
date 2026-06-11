@@ -1,0 +1,11 @@
+title: "Claude×Xで情報収集を90分→5分に：ノイズ自動ミュート機の作り方"
+summary: "Claude Haiku のノイズ分類器と Playwright を組み合わせ、X(Twitter)のTLから宣伝・煽り・無関係ポストを自動除去し、毎朝7時に要約をDiscordへ配信するパイプラインを丸ごと構築します。API無料枠の制約回避、1件あたり¥0.02のコスト試算、ミュート語の自動生成・自動適用までコード付きで再現でき、副業情報収集を1日90分から5分に圧縮できます。"
+topics: ["claude", "automation", "python", "llm", "playwright"]
+published: true
+price: 500
+chapters:
+  - 01-1-7-discord-tl-5
+  - 02-2-x-api-vs-playwright-100-ban
+  - 03-3-claude-haiku-1-0-02-92
+  - 04-4-llm-playwright
+  - 05-5-4-2-580-0
