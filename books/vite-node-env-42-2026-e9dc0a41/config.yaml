@@ -1,0 +1,11 @@
+title: "Vite+Node .env地雷42個を即解決 2026最短チートシート"
+summary: "VITE_接頭辞漏れ・import.meta.env undefined・本番でprocess.env消滅など、Vite+Node混在環境の.envハマり42パターンを再現コードと修正diffで提示。loadEnvでサーバ/クライアントを安全分離し、型付きenv.tsとCI検証で『動いたのに本番で落ちる』を撲滅。コピペで通る最短セットアップが手に入る。"
+topics: ["typescript", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-5-env-undefined-top7
+  - 02-2-import-meta-env-vs-process-env-15
+  - 03-3-dev-preview-build-11-mode
+  - 04-4-env-ts-zod-ci-derror42
+  - 05-5-42-docker-vercel-cloud-run-diff
