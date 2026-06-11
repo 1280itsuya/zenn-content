@@ -1,0 +1,11 @@
+title: "Vite+ESM設定エラー逆引き40連発｜tsconfig最短修正集2026"
+summary: "Vite+ESM環境でtsconfig/jsconfig.jsonが吐く「Cannot find module」「moduleResolution: bundler」「import.meta未定義」「path alias二重管理」を、実際のエラー全文→修正diffの逆引き形式で40件収録。コピペで動く完成tsconfig.jsonと、CIで設定崩れを検知するtsc --noEmitスクリプトまで提供。一件あたり平均3分で解決できる状態にする。"
+topics: ["typescript", "javascript", "react"]
+published: true
+price: 500
+chapters:
+  - 01-1-2026-tsconfig-json-15
+  - 02-2-moduleresolution-bundler-13-verbatimmo
+  - 03-3-path-alias-vite-config-ts-tsconfig-pat
+  - 04-4-jsconfig-json-js-esm-checkjs-ts2580-im
+  - 05-5-ci-tsc-noemit-vite-build-github-action
