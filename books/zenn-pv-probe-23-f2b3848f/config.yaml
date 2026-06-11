@@ -1,0 +1,11 @@
+title: "Zenn PV計測probeを壊さない: 失敗23ケースとテスト設計"
+summary: "Zenn/Qiitaの非公開PV・いいね数を毎朝CSVへ無人追記する計測probeを、半年運用で2回データ破壊した実体験から再設計する。HTML構造変更・429・重複行・型崩れを検知するpytest 23ケースと、GitHub Actions上でDiscordへ差分通知するKPIパイプラインを丸ごと配布。コピペで動くprobe.pyとtest_probe.pyが手に入る。"
+topics: ["python", "automation", "githubactions", "zenn"]
+published: true
+price: 500
+chapters:
+  - 01-1-probe-py-120-kpi-csv
+  - 02-2-html-2-probe
+  - 03-3-pytest-23
+  - 04-4-requests-mock-vcr-py
+  - 05-5-github-actions-discord-pv
