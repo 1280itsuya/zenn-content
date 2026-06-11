@@ -1,0 +1,11 @@
+title: "zenn-cli×Actionsで180本を毎朝自動公開するCI/CD"
+summary: "zenn-cliとGitHub Actionsで、記事とBookをmainへpushするだけで毎朝7時に自動公開するパイプラインを丸ごと構築します。Claudeでの下書き生成→front-matter検証→重複・spam回避のレート制御→CI失敗時のDiscord通知まで、コピペで動くymlとPythonを収録。半年180本運用の失敗17件と損失額も定量報告します。"
+topics: ["zenn", "githubactions", "ci", "claudecode", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-schedule-cron-0-22-7-yml
+  - 02-2-claude-code-front-matter-actions-githu
+  - 03-3-spam-12-qiita-429
+  - 04-4-zenn-cli-book-config-yaml-chapter-book
+  - 05-5-ci-17-180-view
