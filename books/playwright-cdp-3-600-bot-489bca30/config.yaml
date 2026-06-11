@@ -1,0 +1,11 @@
+title: "Playwright+CDPで3サイトに月600枚 深夜自動投稿Bot"
+summary: "自作画像をPinterest/Adobe Stock/Boothへ無人投稿するBotを、Playwrightの素のautomation検知を回避するCDP接続(connect_over_cdp)で実装。BAN3回・損失¥0換算の失敗ログ、cookie永続化、人間風ランダム遅延、深夜2時cron常駐まで動くコードで再現。投稿の手作業を月15時間削減し、3プラットフォームのフォーム差分を吸収する共通Poster設計が手に入る。"
+topics: ["playwright", "python", "automation", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-playwright-3-bot-webdriver-bot
+  - 02-2-connect-over-cdp-chrome-cookie
+  - 03-3-pinterest-adobe-stock-booth-poster
+  - 04-4-ban3
+  - 05-5-2-cron-docker-discord
