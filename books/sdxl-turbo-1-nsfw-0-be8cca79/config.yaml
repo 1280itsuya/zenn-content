@@ -1,0 +1,11 @@
+title: "SDXL Turbo量産1万枚｜NSFW誤検知と著作権で凍結0の運用録"
+summary: "SDXL Turboで生成した画像を半年で1万2千枚Pinterestへ自動投稿し、アカウント凍結0・著作権申し立て0で運用した全記録。NSFW判定器(CompVis safety-checker/NudeNet)の誤検知率とチューニング、LoRA配布元のライセンス確認手順、EXIF/AI透かし付与、Playwright投稿の凍結回避レート設計まで、動くコードと実数値で再現できる。"
+topics: ["stablediffusion", "python", "automation", "ai", "playwright"]
+published: true
+price: 500
+chapters:
+  - 01-1-sdxl-turbo-steps4-512px-1-0-4-400
+  - 02-2-nudenet-safety-checker-1000-false-posi
+  - 03-3-lora-civitai
+  - 04-4-c2pa-exif-ai-pinterest
+  - 05-5-playwright-120-0-shadowban
