@@ -1,0 +1,11 @@
+title: "ビルド0でVanilla JS｜type=moduleの罠11個"
+summary: "Webpack/Viteを一切使わず、script type=moduleと静的配信だけでSPA級のJSアプリを動かす最小設定を実機検証で解説。ローカルでは動くのに本番で落ちるCORS/MIME/拡張子の罠11個を「再現エラー文→原因→1行修正」で網羅。Nginx/Cloudflare Pages/GitHub Pagesそれぞれの.mjs配信設定、import mapでのCDN依存解決、リロード時404対策まで、コピペで動く実コードを提供します。"
+topics: ["javascript", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-0-index-html-main-mjs-import-map
+  - 02-2-mime-6-mjs-text-plain-import
+  - 03-3-cors-5-import-map-fetch-opaque-preflig
+  - 04-4-spa-404-history-api-rewrite
+  - 05-5-jsdoc-tsc-gzip-brotli
