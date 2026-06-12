@@ -1,0 +1,11 @@
+title: "Claude自動ミュートでXの情報収集を90分→8分に短縮"
+summary: "X(旧Twitter)のノイズ除去と情報収集を全自動化する実働パイプラインを構築します。Claude Haikuによるツイート分類、X API無料枠の制限回避、Playwrightフォールバック、Discord通知まで完成。私が副業3アカウント運用で毎日90分かけていた巡回を8分に圧縮した設定値とコスト($0.6/日)をそのまま流用でき、コピペで動くPythonコードを全章に同梱します。"
+topics: ["claude", "python", "automation", "llm", "playwright"]
+published: true
+price: 500
+chapters:
+  - 01-1-90-8-bot
+  - 02-2-claude-haiku-13-0-6
+  - 03-3-x-api-playwright-ban-12-1
+  - 04-4-discord-cron-7-3
+  - 05-5-3-93-42
