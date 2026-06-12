@@ -1,0 +1,11 @@
+title: "Civitai LoRA量産で月3万Buzzを稼ぐ画像選定パイプライン"
+summary: "Civitai APIとPython製の画像選定パイプラインでLoRA制作を半自動化し、Buzz収益化までを一気通貫で構築する。学習画像の自動収集、aesthetic score による選別、kohya_ss のキュー学習、ComfyUI でのサンプル一括生成、Civitai への投稿最適化まで全コード付き。実運用4ヶ月・公開LoRA 62本の採択率と Buzz 収支を実数で公開する。"
+topics: ["stablediffusion", "python", "ai"]
+published: true
+price: 500
+chapters:
+  - 01-lora-62-3-2-buzz
+  - 02-civitai-api-playwright-300-25
+  - 03-aesthetic-predictor-clip-38-72
+  - 04-kohya-ss-comfyui-1-12
+  - 05-civitai-72-buzz-18-lora
