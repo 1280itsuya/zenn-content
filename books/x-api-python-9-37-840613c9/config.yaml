@@ -1,0 +1,11 @@
+title: "X API×Pythonで通知ノイズ9割削減｜副業の情報収集を毎日37分時短"
+summary: "X API v2の無料枠だけで動く自動ミュートBot(全112行)を写経レベルで構築する実装書。OAuth 2.0 PKCE認証のハマりどころ、15分50リクエストのレート制限回避、ノイズ判定スコアリング、Task Scheduler常駐化まで全コード掲載。読了後、1日312件届いていた通知を28件まで自動で間引くパイプラインがあなたの環境で動きます。"
+topics: ["python", "api", "automation", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-mute-bot-py-112-312-28
+  - 02-oauth-2-0-pkce-3-developer-portal-7
+  - 03-sqlite-2-1
+  - 04-429-3-bot-task-scheduler-90
+  - 05-markdown-7-discord
