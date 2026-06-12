@@ -1,0 +1,11 @@
+title: "Vite+Node .env地獄を30分で抜ける2026最短攻略"
+summary: "import.meta.envとprocess.envの分離で起きるundefined事故、VITE_接頭辞の罠、本番でenvが読まれない原因をエラーメッセージ別に逆引き。dotenvx暗号化とzod検証を組み込み、ローカル/Docker/GitHub Actions/Vercelの4環境で変数が確実に通る設定をコピペで再現できる。著者が実プロジェクトで踏んだ12個の罠と損失時間を全公開。"
+topics: ["typescript", "docker", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-undefined-3-diff-import-meta-env-vs-pr
+  - 02-2-env-env-local-env-production-vite-6
+  - 03-3-zod-envalid-process-env
+  - 04-4-docker-compose-build-vite
+  - 05-5-github-actions-secrets-vercel-ci-cd-en
