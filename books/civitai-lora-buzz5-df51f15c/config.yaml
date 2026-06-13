@@ -1,0 +1,11 @@
+title: "CivitaiでLoRA量産・月Buzz5万超えの画像選定パイプライン"
+summary: "sd-scripts×ComfyUIでLoRAを週5本量産し、CLIPスコア自動選定→Civitai API自動アップロード→Buzzデータ収集のフィードバックループを3ヶ月実運用した記録。学習コスト・Buzz数・失敗18件の定量データ付きで、Pythonパイプライン一式をそのまま動かせる。"
+topics: ["stablediffusion", "ai", "python", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-civitai-buzz-3
+  - 02-2-sd-scripts-1-4h-47
+  - 03-3-clip-aestheticpredictor2-buzz-200-20
+  - 04-4-civitai-rest-api-claude-buzz-2-3
+  - 05-5-buzz-lora-github-actions
