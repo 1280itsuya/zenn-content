@@ -1,0 +1,11 @@
+title: "Zennスクレイプ全実装：Cookie3分自動回復+KPI自動コミット"
+summary: "Zennは公式APIを持たない。本書ではhttpxで非公式エンドポイント5本を特定し、Cookie失効を3分以内に検知してPlaywrightが自動再ログイン、取得した統計をGitHub Actionsが毎朝CSVへコミットするPythonパイプラインをゼロから構築する。429エラー8回分の失敗ログと自己回復コードをすべて公開。読み終えたその日に手元で動く。"
+topics: ["python", "playwright", "automation", "scraping"]
+published: true
+price: 500
+chapters:
+  - 01-api-devtools-zenn-5-httpx3
+  - 02-httpx-tenacity-429-zenn-5-client-datacla
+  - 03-cookie-3-playwright-headless-3
+  - 04-github-actions-cron-0-22-zenn-kpi-jst7-c
+  - 05-pandas-7-slack-incoming-webhook-0-zenn-k
