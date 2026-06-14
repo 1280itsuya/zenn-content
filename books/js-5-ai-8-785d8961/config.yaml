@@ -1,0 +1,11 @@
+title: "JS環境エラー5パターン：AI副業ツールを8時間で完全復旧する手順書"
+summary: "Claude API・Playwright・zenn-cliを実務投入した際に8割のエンジニアが踏むJS設定エラー5パターンを、実物のスタックトレース・損失時間・修正差分とともに全公開。Node.js/ブラウザ/Edge Runtimeの環境切り分けチェックリストと、tsconfig/webpack/vite設定の最小修正コードを即使用可能な形で提供。読了後には自分のAI副業ツールをどの環境でも10分以内に動かせるデバッグSOPが手に入る。"
+topics: ["javascript", "node", "claude", "automation", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-claude-api-playwright-zenn-cli-5
+  - 02-2-tsconfig-json-4-esm-cjs-8-module-modul
+  - 03-3-node-js-vs-vs-edge-runtime-claude-api
+  - 04-4-webpack-5-vite-5-tsx-playwright-segfau
+  - 05-5-claude-code-github-actions-js-api-200
