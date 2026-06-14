@@ -1,0 +1,11 @@
+title: "JS設定で3時間溶かした失敗から作ったVite+ESM最短構築ガイド2026"
+summary: "ERR_REQUIRE_ESM・Module not found・jsconfig補完ゼロ──3大設定地獄を実エラーログと修正diffで完全攻略。Vite 6+Node.js 22環境をゼロから15分で完成させ、Claude Code・GitHub Copilotの補完が即座に効くjsconfig/tsconfig設計まで一気通貫で習得できる。Playwright CI通過率92%→99%に上げたGitHub Actions設定と、zenn-cli ESM化による技術記事半自動投稿ワークフローも収録。2026年実務対応版。"
+topics: ["javascript", "typescript", "claudecode", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-err-require-esm-module-not-found-4-5
+  - 02-2-vite-6-node-js-22-esm-package-json-3-v
+  - 03-3-jsconfig-json-15-claude-code
+  - 04-4-playwright-vite-ci-92-99-github-action
+  - 05-5-zenn-cli-claude-code-2-node-js
