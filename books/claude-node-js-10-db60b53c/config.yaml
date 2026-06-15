@@ -1,0 +1,11 @@
+title: "Claude/Node.js副業ツール環境：動かない10原因と診断スクリプト"
+summary: "Claude API・zenn-cli・Playwrightなど副業自動化ツールが「インストールは通るが動かない」状態を抜け出す実践書。TypeScript製の診断スクリプト1本で10項目を30秒可視化し、Node.jsバージョン競合・.env未ロード・tsconfig不整合・GitHub Actions secrets設定ミスを実ログ付きで解決。完走後には手元の副業ツールが本番稼働している。"
+topics: ["claude", "typescript", "automation", "javascript"]
+published: true
+price: 500
+chapters:
+  - 01-1-50-10-ok-ng-warn
+  - 02-2-node-js-18-20-22-claude-sdk-3-nvm
+  - 03-3-env-claude-api-key-undefined-5
+  - 04-4-tsconfig-json-module-target-claude-sdk
+  - 05-5-github-actions-ci-cd-claude-api-6-work
