@@ -1,0 +1,11 @@
+title: "Claude Code×5ch自動配信：90日構成図と失敗17件全公開"
+summary: "Claude Code + GitHub Actions で Zenn/Qiita/Dev.to/Bluesky/note への5チャンネル同時配信パイプラインを90日で構築した実録。オーケストレーター設計・LLM-as-Judge品質ゲート・各Poster実装を全コード公開。ハング12回・PAT漏洩・429連発など失敗17件を定量で開示し、コピペ再現できるconfig一式を付録として提供する。"
+topics: ["claude", "automation", "devops", "agent", "python"]
+published: true
+price: 500
+chapters:
+  - 01-claude-code-7-5ch-75
+  - 02-llm-as-judge-agent-loop
+  - 03-poster-5-zenn-cli-qiita-api-dev-to-blues
+  - 04-17-12-429-git-push-2h-pat
+  - 05-90-lock-git-terminal-prompt-0-task-sched
