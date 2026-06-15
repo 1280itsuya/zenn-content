@@ -1,0 +1,11 @@
+title: "副業JS環境構築をClaudeに丸投げ：初動28分・失敗9パターン付き"
+summary: "副業JavaScript案件を受注したその日に動くプロジェクトを立ち上げるための自動化手順書。Claude APIとGitHub Copilotを組み合わせ、package.json・ESLint・Prettier・devcontainer設定を自動生成するスクリプトを全コード公開。SPA/REST API/Shopify/WordPress別プロンプトテンプレート9選と、23案件6ヶ月の初動時間実測ログ（平均238分→28分）およびAPIコスト損益分岐点計算シート付き。"
+topics: ["claude", "javascript", "automation", "claudecode", "typescript"]
+published: true
+price: 500
+chapters:
+  - 01-1-4-28-claude
+  - 02-2-claude-api-node-js-package-json-eslint
+  - 03-3-4-claude-copilot-9
+  - 04-4-copilot-chat-devcontainer-json-5-3-nod
+  - 05-5-23-6-claude-api-4-200-70
