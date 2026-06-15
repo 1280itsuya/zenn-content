@@ -1,0 +1,11 @@
+title: "ClaudeでSNSノイズ除去＆副業ネタ収集を1日15分化する全実装"
+summary: "Claude API（Haiku/Sonnet）＋PythonでSNSの不要投稿をリアルタイム分類し自動ミュートリストを生成。RSS・X API・Bluesky APIから副業ネタを日次収集→要約→Notion保存し、GitHub Actions×zenn-cliで毎朝自動デプロイするパイプラインを一気通貫で実装する。誤検知率3%・API費用月¥800・情報収集時間90%削減の実測値付き。3ヶ月でアフィリ収益¥3,200を達成したCI/CD設計を全コード公開。"
+topics: ["claude", "ai", "python", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-sns-1-3
+  - 02-claude-haiku-vs-sonnet-1-000-0-28-3
+  - 03-rss-20-x-bluesky-api-claude-notion
+  - 04-github-actions-zenn-cli-7-bluesky-zenn-y
+  - 05-3-roi-claude-api-800-cvr-sim-3-200
