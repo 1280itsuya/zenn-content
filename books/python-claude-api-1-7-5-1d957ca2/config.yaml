@@ -1,0 +1,11 @@
+title: "Python＋Claude APIで作るアフィリ記事自動生成パイプライン完全ガイド：1記事7分・月収5万を狙う個人開発の全工程"
+summary: "Claude APIとPythonで実際に動くアフィリ記事量産パイプラインをゼロから構築。キーワード選定→生成→投稿→収益計測まで実コード全公開で、1記事の工数を90分から7分に削る手順を徹底解説。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-claude-api-python
+  - 03-markdown-python
+  - 04-github-actions-claude-ci-cd
+  - 05-chapter
+  - 06-zenn-qiita-pdca
