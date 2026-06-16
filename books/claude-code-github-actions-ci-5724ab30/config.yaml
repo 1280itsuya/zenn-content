@@ -1,0 +1,11 @@
+title: "Claude Code×GitHub Actions CI全自動化実装"
+summary: "Claude Code CLIとGitHub Actionsを連携し、PR自動レビュー・pytest失敗の自己修復提案・ステージング/本番デプロイ・Slack通知を料金¥0で完走させるCI/CDパイプラインを実装する。YAML全文・プロンプト全文・コスト実測値付き。読み終えると1リポジトリで即稼働するAI支援CIが手元に完成する。"
+topics: ["claude", "claudecode", "githubactions", "ci", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-claude-code-cli-github-actions-15-yaml
+  - 02-pr-claude-43-5
+  - 03-pytest-claude-tool-use-branch-30
+  - 04-slack-block-kit-3-1-0
+  - 05-6-ci-claude-3-5-sonnet-haiku-1-5-2-3
