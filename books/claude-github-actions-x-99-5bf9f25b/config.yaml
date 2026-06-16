@@ -1,0 +1,11 @@
+title: "Claude+GitHub ActionsでX自動ミュート｜ノイズ99%削減パイプライン"
+summary: "X API v2とClaude Haiku APIを組み合わせ、TLのノイズをスコアリング→自動ミュート→週次レポートまで完全自動化するPythonパイプラインを実装から運用まで解説。GitHub Actions定期実行・Playwright fallback・6ヶ月の実測コスト(月¥183)と精度データをすべて公開し、「触ってみた」止まりを超えた本番稼働レベルの構築手順を全コード付きで学べる。"
+topics: ["claude", "python", "automation", "githubactions", "api"]
+published: true
+price: 500
+chapters:
+  - 01-1-x-api-v2-rate-limit-claude-haiku-183
+  - 02-2-claude-haiku-api-0-10-91
+  - 03-3-x-api-v2-mutes-users-playwright-fallba
+  - 04-4-github-actions-cron-00-00-jst-discord
+  - 05-5-6-84-99-5
