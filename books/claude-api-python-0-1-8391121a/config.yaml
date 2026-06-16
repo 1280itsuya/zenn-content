@@ -1,0 +1,12 @@
+title: "【ガチ実装】Claude API×Pythonで副業記事パイプラインを0→1で作る個人開発ガイド"
+summary: "Claude APIとPythonで記事生成→アフィリ埋め込み→自動投稿まで一気通貫するパイプラインを実コード付きで解説。1記事7分量産を実現した個人開発の全手順を公開。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-chapter
+  - 02-claude-api-python
+  - 03-claude
+  - 04-github-actions-ci
+  - 05-5
+  - 06-chapter
