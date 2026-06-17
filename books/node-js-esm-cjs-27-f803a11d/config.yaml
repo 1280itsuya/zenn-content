@@ -1,0 +1,11 @@
+title: "Node.js ESM/CJS混在バグ27選と即効修正コード全収録"
+summary: "ERR_REQUIRE_ESMからdynamic import地雷まで、Node.js 20/22でAI SDK（OpenAI・Anthropic）を実務投入する際に踏む27種のモジュールエラーを実コードで解決。tsup/Vitestのデュアルビルド設定・段階移行スクリプトも全掲載。読み終えればCJS/ESM混在プロジェクトの配線が1日で終わる。"
+topics: ["javascript", "typescript", "ai", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-err-require-esm-cannot-use-import-stat
+  - 02-2-anthropic-sdk-0-x-openai-sdk-4-x-cjs-3
+  - 03-3-type-module-5-cjs-mjs
+  - 04-4-vitest-esm-jest-transformignorepattern
+  - 05-5-tsup-8-x-1-cjs-esm-github-actions-ci
