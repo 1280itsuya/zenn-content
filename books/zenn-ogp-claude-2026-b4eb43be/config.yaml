@@ -1,0 +1,11 @@
+title: "Zenn OGP・リンクカード最短実装Claude自動検証付き2026"
+summary: "Zenn記事・Bookで「リンクカードが消える」「X/SlackでOGPが崩れる」「impressionsが伸びない」3大ミスを実測データで解剖し修正手順を完全公開。Zenn-CLI+GitHub ActionsでプッシュするたびOGP品質をバリデーション、Claude Codeでdescription・カバー画像を自動生成するCIを6ステップで構築。32記事6ヶ月のimpressions実測値とリンクカードCTRの相関もそのまま掲載。"
+topics: ["zenn", "claudecode", "githubactions", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-zenn-3-impressions-18
+  - 02-2-zenn-vs-ogp-2026
+  - 03-3-zenn-cli-github-actions-ogp-ci-6
+  - 04-4-claude-code-description-3-svg-a-b
+  - 05-5-32-6-ogp-impressions-5
