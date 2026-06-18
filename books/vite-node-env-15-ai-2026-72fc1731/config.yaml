@@ -1,0 +1,11 @@
+title: "Vite+Node .env 15エラー即解決+AIキー管理2026"
+summary: "「import.meta.env.VITE_XXXがundefined」「process.envがbuildで消える」など実務頻出15エラーをコード付き逆引きで即解決。zod+t3-envによる型安全スキーマ設計、GitHub Actions→Vercel/Railwayへの秘密変数受け渡し、Claude/OpenAI APIキー漏洩ゼロの本番運用テンプレまで、コピペ即動作の実装書。"
+topics: ["typescript", "githubactions", "claude"]
+published: true
+price: 500
+chapters:
+  - 01-1-import-meta-env-vite-xxx-undefined-3-3
+  - 02-2-vite-env-12
+  - 03-3-zod-t3-env-env
+  - 04-4-github-actions-secret-vercel-railway-d
+  - 05-5-claude-openai-api-72-4-200
