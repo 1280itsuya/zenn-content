@@ -1,0 +1,11 @@
+title: "Zenn非公式API14本+認証突破で自作ダッシュボード構築完全手順"
+summary: "公式ドキュメントが存在しないZennのAPIをDevToolsで実測調査し、認証トークン取得から統計データ自動収集・Next.jsダッシュボード構築・GitHub Actionsによる毎日自動更新まで全工程を動くコードで解説。閲覧数・いいね・フォロワー推移をリアルタイム可視化し、Claude APIによる傾向分析まで自動化できるようになる。"
+topics: ["zenn", "api", "nextjs", "automation", "claude"]
+published: true
+price: 500
+chapters:
+  - 01-1-devtools-zenn-14
+  - 02-2-firebase-auth-cookie2-3-9-30
+  - 03-3-typescript-1-30req-429-200req
+  - 04-4-next-js-14-shadcn-ui-recharts-vercel-3
+  - 05-5-github-actions-7-claude-api-40
