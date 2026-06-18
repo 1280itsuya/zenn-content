@@ -1,0 +1,12 @@
+title: "【個人開発者向け実践ガイド】Claude APIで収益化パイプラインを作る：7分で記事・コード・副業ネタを量産する全手順"
+summary: "Claude APIとPythonで「アイデア→記事→収益」を自動化する個人開発パイプラインを、実コードと失敗談を交えて完全解説。月3万円を稼いだ著者の全設計図を公開。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-2-claude-api-python
+  - 03-3-zenn-qiita
+  - 04-4-github-actions-7-ci-cd
+  - 05-5-claude-api-10
+  - 06-6-gumroad-view
+  - 07-7-3
