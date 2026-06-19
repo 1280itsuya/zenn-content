@@ -1,0 +1,13 @@
+title: "Claude APIで作る個人開発自動化パイプライン完全ガイド｜1記事7分・月12万削減の実践レシピ"
+summary: "Claude APIとPythonで記事生成・コスト監視・SNS運用を自動化する個人開発パイプラインを実コード付きで解説。手間90%削減と無駄コスト12万円圧縮を同時に実現する再現可能な手順書。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-claude-api
+  - 02-claude-api-5
+  - 03-claude-api-1-90-7
+  - 04-claude-api-aws
+  - 05-sns-claude-api-x-zenn-qiita
+  - 06-claude-api-7
+  - 07-claude-api
