@@ -1,0 +1,11 @@
+title: "動かないAI副業ツールのJS設定エラー10選×自動診断CLI2026"
+summary: "Claude Code・LangChain.js・Playwrightなど現場で使うAI自動化ツールが沈黙する原因の9割は.env読込順/tsconfig paths/lockfile混在の3層。典型エラー10種を実ログ・損失コスト付きで解剖し、200行のNode.js診断CLIを自作することで「次からは30秒で特定」できる状態を手に入れる。"
+topics: ["javascript", "typescript", "ai", "automation", "claudecode"]
+published: true
+price: 500
+chapters:
+  - 01-1-3-4-ai-js-10
+  - 02-2-env-env-local-dotenv-vite-claude-api-4
+  - 03-3-tsconfig-json-paths-moduleresolution-l
+  - 04-4-pnpm-npm-bun-playwright-claude-api-loc
+  - 05-5-zod-execa-200-node-js-cli-1-4-10-30
