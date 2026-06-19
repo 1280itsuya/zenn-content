@@ -1,0 +1,11 @@
+title: "Vite+Node.js AIツール本番10エラー完全解体2026"
+summary: "AI自動化ツール開発でVite+Node.jsを本番投入する際に踏む10の典型エラーを、実ログ・ロスト時間・解決コマンドで完全網羅。import.meta.env誤用・ESM/CJS競合・GitHub Actions CIビルド失敗・Claude Code MCP連携時のモジュール解決エラーまで定量で解体。読了後はエラー再発ゼロのpackage.json構成テンプレ4点セットがそのまま使える。"
+topics: ["claude", "automation", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-npm-create-vite-latest-5-10
+  - 02-2-import-meta-env-vs-process-env-vite-76
+  - 03-3-package-json-type-module-1-require-imp
+  - 04-4-github-actions-vite-build-4-oom-secret
+  - 05-5-claude-code-mcp-vite-checklist-10-pack
