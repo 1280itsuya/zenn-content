@@ -1,0 +1,11 @@
+title: "AI副業ツール5大JS地雷 Node/Browser環境デバッグ全手順"
+summary: "AI自動化ツール・Claude APIクライアントを実装したまま3日以上詰まった経験があるエンジニア向け。本書ではrequire/ESM混在・window未定義・moduleResolution衝突・Bun/Deno環境差異など頻出5パターンを完全再現し、エラー文字列から修正コードまでを章単位で引ける辞書として設計。診断スクリプトenv-probe.mjsを第1章で実装し、当日中にデプロイできる状態まで到達できる。"
+topics: ["javascript", "typescript", "claude", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-env-probe-mjs-30-node-worker
+  - 02-require-is-not-defined-3-esm-cjs-claude
+  - 03-window-is-not-defined-next-js-api-playwr
+  - 04-moduleresolution-bundler-anthropic-ai-sd
+  - 05-node-20-bun-1-x-deno-2-x-github-actions
