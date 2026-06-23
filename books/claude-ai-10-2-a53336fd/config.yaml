@@ -1,0 +1,11 @@
+title: "Claude診断でAI副業ツール起動障害10件を2分で潰す"
+summary: "AI副業・自動化ツール（Claude CLI / n8n / Playwright）が「動かない」原因の9割はJS/TS環境設定に潜む。本書では診断スクリプト env-diag.js を第1章で先渡しし、10障害パターン（Node版数ミス・jsconfig地雷・ESM/CJS混在等）を実測ログ付きで完全修復。最終章ではGitHub ActionsへのCI統合まで実装し、月8件あった環境起因の起動失敗を1件に削減した運用実績も公開する。"
+topics: ["claude", "javascript", "typescript", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-env-diag-js-10-2-stdout
+  - 02-node-js-3-nvm-fnm-claude-cli
+  - 03-jsconfig-json-tsconfig-json-5-playwright
+  - 04-package-json-3-esm-cjs-7
+  - 05-env-diag-js-github-actions-pr-slack-8-1
