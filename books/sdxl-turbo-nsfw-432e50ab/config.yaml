@@ -1,0 +1,11 @@
+title: "SDXL Turbo量産：NSFW誤検知率と著作権回避の全実装コード"
+summary: "SDXL Turboで1日1,000枚を生成しPinterestへ全自動投稿するパイプラインをコード全文付きで構築する。safety_checker廃止後のNSFWフィルタ実装（誤検知率3.2%達成）・学習データ類似度スクリーニング・Pinterest API v5連携・6ヶ月運用の実測数値まで、失敗ログと定量データで一切ごまかさず報告する現場実装書。"
+topics: ["stablediffusion", "python", "automation", "ai"]
+published: true
+price: 500
+chapters:
+  - 01-1-sdxl-turbo-4-step-1-3-a100-rtx4090-309
+  - 02-2-safety-checker-nsfw-falconsai-clip-3-2
+  - 03-3-0-85-phash-python
+  - 04-4-pinterest-api-v5-1-500-200req-rate-lim
+  - 05-5-6-impressions-10-120-ban-pinterest-2
