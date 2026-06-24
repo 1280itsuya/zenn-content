@@ -1,0 +1,11 @@
+title: "SNSノイズ82%カット×Claude API副業パイプライン2026"
+summary: "週5時間超のSNS情報収集をClaude API×Playwrightの自動パイプラインで週30分に圧縮する全実装を解説。X/Bluesky取得→LLMノイズ分類→Notion仕分け→Zenn記事自動化まで100行スターターキット付き。月APIコスト¥200以下で副業収益化ラインを読んだ当日中に構築できる。"
+topics: ["claude", "python", "playwright", "automation", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-1-82-3
+  - 02-2-playwright-x-bluesky-api-429
+  - 03-3-claude-api-function-calling-2-67-91
+  - 04-4-notion-api-5-2h-0-5h
+  - 05-5-notion-zenn-3-0-15-000
