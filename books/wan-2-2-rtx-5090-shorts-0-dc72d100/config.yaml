@@ -1,0 +1,11 @@
+title: "Wan 2.2×RTX 5090でShorts毎日0円量産全設定"
+summary: "RTX 5090(VRAM 32GB)でWan 2.2をローカル動作させ、ComfyUI APIからYouTube Data API v3までをPythonで一気通貫に繋ぐ自動投稿パイプラインを構築する。segfault回避・ffmpegショート編集・Whisper字幕生成の実装コードを全掲載。30日90本の実運用データと収益化タイムラインも付録。読了後、0円でShortsが毎日自動公開される状態を手に入れられる。"
+topics: ["ai", "python", "automation", "llm", "agent"]
+published: true
+price: 500
+chapters:
+  - 01-rtx-5090-wan-2-2-30-vram-32gb-offload-se
+  - 02-comfyui-api-720p-60-15-20
+  - 03-ffmpeg-bgm-whisper-shorts-60-opencv-120g
+  - 04-youtube-data-api-v3-0-00-oauth-2-0-windo
+  - 05-30-90-1-800
