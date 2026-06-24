@@ -1,0 +1,11 @@
+title: "【実装付き】Claude APIで作る個人開発自動化パイプライン完全ガイド——1タスク90分→7分を実現したPythonコード全公開"
+summary: "Claude APIとPythonで個人開発の反復作業を自動化するパイプラインを設計から実装・運用まで解説。実コード付きで即日導入可能。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-claude-api-python
+  - 03-7-python
+  - 04-github-actions
+  - 05-7
+  - 06-claude-api
