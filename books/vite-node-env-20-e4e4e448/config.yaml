@@ -1,0 +1,11 @@
+title: "Vite+Node .env 設定ハマり20選と自動修正スクリプト付き"
+summary: "Vite と Node.js の .env 読み込みを巡る20種のハマりパターンを再現コード付きで完全網羅。VITE_プレフィックス未設定・import.meta.env と process.env の混在・.env.local 優先順位バグ・GitHub Actions シークレット注入ミス・外部 API キーの本番漏洩まで、初回投入時に必ず踏む落とし穴を一冊で解消。読了後は「env 設定で詰まる時間ゼロ」を達成する CI/CD テンプレートが手元に揃う。"
+topics: ["node", "typescript", "devops", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-100-vite-node-env-5-30
+  - 02-2-import-meta-env-vs-process-env-vite-no
+  - 03-3-env-local-env-production-env-test-dote
+  - 04-4-github-actions-docker-3-vite-workflow
+  - 05-5-claude-api-vite-ci-100
