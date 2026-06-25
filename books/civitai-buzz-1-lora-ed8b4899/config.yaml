@@ -1,0 +1,11 @@
+title: "Civitai Buzz上位1%に入るLoRA量産パイプライン完全実装"
+summary: "CivitaiのAPIでBuzz上位100件のトレンドを解析し、学習データ自動選定→kohya_ss CLI学習→Playwright投稿→週次Buzzフィードバックループを1本のPythonパイプラインで繋ぐ実装書。6週間・42本のLoRAを量産してBuzz累計1,200を獲得した設計と8回の失敗録を全公開。ComfyUI/kohya_ss/InsightFace/Playwrightの具体コードのみ収録。"
+topics: ["python", "ai", "automation", "stablediffusion"]
+published: true
+price: 500
+chapters:
+  - 01-1-civitai-rest-api-buzz-100-3
+  - 02-2-1-000-100-clip-score-insightface-pytho
+  - 03-3-kohya-ss-cli-cron-vram-12gb-24gb
+  - 04-4-playwright-civitai
+  - 05-5-buzz-a-b-lora-6-42
