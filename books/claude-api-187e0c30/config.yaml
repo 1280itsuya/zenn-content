@@ -1,0 +1,12 @@
+title: "【実装付き】Claude APIで個人開発パイプラインを作り、副業収益を自動化する完全ガイド"
+summary: "Claude APIとPythonで記事生成・投稿・収益化を全自動化する個人開発パイプラインを実コード付きで解説。1日7分運用で月収を積み上げるまでの設計・落とし穴・改善ループを全公開。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-2-claude-api-python-github-actions
+  - 03-3-claude-api
+  - 04-4-zenn-qiita-git-push-api
+  - 05-5-15-403
+  - 06-6-view
+  - 07-7-note-booth
