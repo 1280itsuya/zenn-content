@@ -1,0 +1,11 @@
+title: "Claude APIでSNSノイズ97%削減・副業ネタ自動収集2026"
+summary: "PlaywrightでX・Bluesky・Redditを毎日500件自動取得→claude-sonnet-4-6でノイズスコアリング→閾値未満を自動ミュート→副業ネタ上位をNotion DBへ自動保存するパイプラインを完全実装。GitHub Actions cron（毎朝6時JST）で無人運用し、1日90分→8分に削減した3ヶ月実測データを掲載。全コードはGitHubで公開。"
+topics: ["claude", "playwright", "python", "automation", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-90-8-68
+  - 02-playwright-1-44-x-bluesky-reddit-500-5
+  - 03-claude-sonnet-4-6-1-0-02
+  - 04-github-actions-cron-06-00-jst-slack
+  - 05-notion-api-2-0-db-claude
