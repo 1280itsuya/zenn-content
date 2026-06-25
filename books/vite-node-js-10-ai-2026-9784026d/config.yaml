@@ -1,0 +1,11 @@
+title: "Vite+Node.js初期エラー10選 AI自動化ツール投入2026"
+summary: "Claude Code・Playwright・AI副業スクリプトをVite+Node.js環境に乗せようとして沈む初期エラー10種を、実スタックトレースと修正diffで完全網羅。ESM/CJS混在・.env未読み込み・Peer deps地獄・CIキャッシュ破損など2026年の地雷を実録順に解説。読み終えた翌日から自動化ツールを本番投入できる実践書。"
+topics: ["node", "javascript", "typescript", "claudecode"]
+published: true
+price: 500
+chapters:
+  - 01-99-3-err-require-esm-env-monorepo
+  - 02-nvm-fnm-volta-nvmrc-ci-node-2
+  - 03-vite-config-ts-10-claude-sdk-playwright
+  - 04-package-json-cross-env-dotenv-cli-window
+  - 05-github-actions-node-95-3-ci-yaml
