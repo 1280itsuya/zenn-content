@@ -1,0 +1,11 @@
+title: "Vite+ESMエラー最短解決2026｜Claude診断スクリプト付き"
+summary: "Vite+ESM移行で頻発するtsconfig/jsconfig設定エラー23種を原因ごとに分類し、Claude Sonnet 4.6 APIにエラー文を投げるだけで差分修正提案が返るPythonスクリプト50行を実装。GitHub ActionsへのCI統合テンプレートまで動くコードをそのまま持ち帰れる。"
+topics: ["typescript", "javascript", "claude", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-vite-esm-top5-tsconfig-json
+  - 02-moduleresolution-bundler-node16-node10-e
+  - 03-jsconfig-json-3-vite-vue3-react18-vanill
+  - 04-claude-sonnet-4-6-vite-python-50
+  - 05-github-actions-tsc-noemit-esm-pr-ci
