@@ -1,0 +1,13 @@
+title: "AI副業自動化の教科書"
+summary: "AIと自動化で稼ぐ実践ノウハウを実践に落とし込む。序章+全5章+まとめ。"
+topics: ["ai", "automation", "claude", "python", "individualdev"]
+published: false
+price: 500
+chapters:
+  - 00-intro
+  - 01-ai-5
+  - 02-chatgpt-api
+  - 03-3-ai
+  - 04-4
+  - 05-5
+  - 99-outro
