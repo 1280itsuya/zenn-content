@@ -1,0 +1,11 @@
+title: "Xノイズ97%カット：副業情報だけ届くPython通知パイプライン設計"
+summary: "X公式フィルタ30KWで1週間運用した実測ノイズ通過率から始め、Playwright＋GitHub Actions cronによるAPI無し副業ツイート収集→Claude Haiku 2段階スコアリングで偽陽性を41%→8%に削減→Slack/Notion Webhook送達まで、月¥200以内で動く自動通知基盤をコードとともに完全構築する。"
+topics: ["python", "automation", "ai", "llm", "claude"]
+published: true
+price: 500
+chapters:
+  - 01-1-x-30kw-1-1
+  - 02-2-x-api-v2-basic-vs-playwright
+  - 03-3-kw-41
+  - 04-4-claude-haiku-api-2-22-8-180
+  - 05-5-slack-webhook-notion-api-1-45-5
