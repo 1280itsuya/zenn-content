@@ -1,0 +1,11 @@
+title: "Claude API×Python で作る「AI副業パイプライン」完全実装ガイド──1記事7分量産から収益化まで"
+summary: "Claude APIとPythonで記事自動生成→投稿→収益化を一本のパイプラインに繋ぐ実装書。コード全公開・落とし穴込みで個人開発者が即日動かせる構成。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-claude-api
+  - 04-zenn-qiita-api-github-actions-7
+  - 05-chapter
+  - 06-ban
+  - 07-view
