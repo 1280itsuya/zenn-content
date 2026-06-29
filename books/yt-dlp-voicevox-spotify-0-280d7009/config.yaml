@@ -1,0 +1,11 @@
+title: "yt-dlp＋VOICEVOXで記事をSpotify配信・年0円自動化"
+summary: "はてなブログ記事をyt-dlpで取得しVOICEVOXで音声合成、GitHub Actionsで毎朝自動実行してRSSフィードを生成、Spotify for Podcastersへ自動配信するパイプラインをゼロから実装する。AWS・GCP不使用・月額0円構成で「記事を書くとPodcastが自動公開される」状態を6ステップで達成できる。"
+topics: ["python", "automation", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-github-actions-voicevox-spotify-3-url
+  - 02-2-yt-dlp-2-2-hatena
+  - 03-3-voicevox-0-20-http-api-id-speakingrate
+  - 04-4-github-workflows-podcast-yml-actions-8
+  - 05-5-spotify-for-podcasters-rss-41-7
