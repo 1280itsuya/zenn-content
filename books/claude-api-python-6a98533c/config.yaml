@@ -1,0 +1,12 @@
+title: "Claude API×Pythonで副業コンテンツを完全自動量産する個人開発パイプライン構築術"
+summary: "Claude APIとPythonだけで記事・アフィリコンテンツを1本7分で量産するパイプラインを、実コード・実測コスト・落とし穴ごと公開。副業収益化までの最短ルートを体系化した実践書。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 02-2-claude-api
+  - 03-3-claude-api
+  - 04-4-github-actions-7-claude-api
+  - 05-5-claude-api
+  - 06-6-claude-api
+  - 07-7-claude-api-5
