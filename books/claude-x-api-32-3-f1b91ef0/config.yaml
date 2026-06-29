@@ -1,0 +1,11 @@
+title: "Claude×X APIミュート完全自動化：誤爆率32%→3%の実装書"
+summary: "X(旧Twitter)のノイズを「見て判断」から「AIが自動分類→ミュート」へ移行する実装書。X API v2のレート制限を回避しながらClaude APIで投稿内容をスコアリングし、GitHub Actionsで毎日自動実行するパイプラインを完全公開。3ヶ月・300アカウント運用で誤爆率32%→3%に下げた特徴量設計とプロンプト改善ログを定量データ付きで収録。"
+topics: ["claude", "python", "automation", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-x-api-v2-1000-3
+  - 02-2-tweepy-v4-claude-claude-sonnet-4-6-30
+  - 03-3-github-actions-cron-secrets-6-yaml
+  - 04-4-32-3-v1-v7-7
+  - 05-5-slack-block-kit
