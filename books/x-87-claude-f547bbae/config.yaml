@@ -1,0 +1,11 @@
+title: "X副業フィルタ自動化: ノイズ87%削減のClaude実装全公開"
+summary: "X(Twitter)通知ノイズ率88%→11%に削減した実装記録。公式ミュートUIの限界を定量で示したうえで、Playwright 1.44でキーワードCSV自動同期→Claude Haiku APIで副業シグナルスコアリング→GitHub Actions無料枠でSlack転送する4ステップを全コード付き解説。週12時間の情報収集が1.5時間に圧縮できる自前フィルタを手元で動かせるようになる。"
+topics: ["automation", "python", "claude", "playwright", "githubactions"]
+published: true
+price: 500
+chapters:
+  - 01-1-ui-12-88-71
+  - 02-2-playwright-1-44-x-csv-ui-400-5
+  - 03-3-claude-haiku-api-0-10-0-8
+  - 04-4-7-slack-github-actions-2000
+  - 05-5-4-12h-1-5h-3-roi-63-750
