@@ -9,224 +9,194 @@ price: 300
 
 ## 何が起きているのか（原因の本質）
 
-`error[E0499]: cannot borrow as mutable more than once at a time` は、Rustのコンパイラが「同一データへの可変借用が同時に2つ以上存在する」と判定したときに発生する。表面上は「2回借りようとしたから怒られた」に見えるが、内部で起きていることはもう少し深い。
+`error[E0499]: cannot borrow as mutable more than once at a time` は、Rust のコンパイラが**同一値への可変借用が同時に2つ以上存在する**と判断したときに発生する。
 
-Rustの借用規則は「ある瞬間に可変参照は1つだけ」を保証することで、データ競合をコンパイル時に完全に除去する。これはスレッド安全性だけでなく、同一スレッド内でも適用される。可変参照が2つ並ぶと、一方が保持するポインタの指す先をもう一方が書き換えられる。たとえば`Vec`への2つの`&mut`が同時に存在し、一方が`push`でバッファを再確保した場合、他方のポインタはダングリングになる。これを言語レベルで禁止しているのがこのエラーの本質だ。
+Rust の所有権システムは次の不変条件を強制する。
 
-重要なのは「ライフタイムの重なり」という概念だ。Rust 2018以降はNon-Lexical Lifetimes（NLL）が導入されており、借用のスコープはレキシカルなブロック境界ではなく「最後に使われた箇所まで」に短縮される。それでもE0499が出るケースが後を絶たない。なぜかというと、NLLが解決するのはあくまでスコープが見た目上分離しているケースに限られ、借用が構造体のフィールド越しに伝播するケースや、メソッド呼び出しが返す参照のライフタイムが`self`全体に結びついているケースでは、コンパイラは「重なっている」と判定し続けるからだ。
+> ある値への可変参照（`&mut T`）が生きている間、同じ値への別の参照（`&T` も `&mut T` も）は存在できない。
 
-もう一点押さえておきたいのは、コンパイラが借用を追跡する単位だ。現行のNLL実装は基本的にフィールド単位まで借用を分割できるが（Partial Borrows）、メソッドの返り値の場合はそのメソッドのシグネチャが`&mut self`を取る時点で`self`全体が占有される。複数のフィールドへ個別にアクセスしたいのに、単一の`&mut self`メソッドが壁になって連鎖するケースはこれが原因だ。
+この制約はデータ競合をコンパイル時にゼロにするための設計であり、ランタイムではなくコンパイラが静的に証明する。
+
+問題の核心は**借用のスコープがソースコードの見た目と必ずしも一致しない**点にある。Rust 2018 edition 以降は NLL（Non-Lexical Lifetimes）が導入され、変数の最後の使用時点で借用が終了するよう改善された。しかし NLL でも解消できないパターンが存在する。代表例がコレクション要素への参照を保持しながら同一コレクションを変更しようとするケースだ。
+
+```rust
+let mut v = vec![1, 2, 3];
+let first = &mut v[0]; // v への可変借用①が始まる
+v.push(4);             // v への可変借用②→ E0499
+println!("{}", first);
+```
+
+`v.push(4)` は内部で `&mut self` を要求するため、借用①がまだ生きている状態で借用②が発生する。コンパイラは `first` が最後に使われる `println!` まで借用①を有効とみなすため、`push` の行でエラーになる。
+
+借用の「生存区間」はあくまでコンパイラが計算するライフタイムグラフ上の話であり、人間が直感するスコープとズレが生じやすい。このズレがエラーを追いにくくさせている。
 
 ---
 
 ## なぜ多くの解説では解決しないのか
 
-ネット上にある説明の大半は「スコープを分けろ」「クローンしろ」で終わる。単純なケースではそれで動くが、実際に困るのはそれでは解決しない状況だ。
+### 「スコープを絞ればいい」という助言が効かないケース
 
-**パターン1：メソッドが`&mut self`を返す**
-
-```rust
-fn first_mut(&mut self) -> &mut i32 { &mut self.data[0] }
-```
-
-このようなメソッドを呼んで得た参照を保持しながら同じ構造体のメソッドを再度呼ぼうとすると、返り値の参照ライフタイムが`'self`に束縛されているため、コンパイラは「まだselfを借用中」と判断してE0499を出す。スコープを視覚的に分けても、返り値を変数に保持している限り借用は続いている。
-
-**パターン2：HashMapのエントリ更新**
+ブロックで囲んで借用を早期に終わらせる方法はよく紹介される。しかし**参照を返すメソッド（`entry` API など）を介して借用が継続しているケース**では、ブロックを置いた位置と借用終端がかみ合わないことがある。
 
 ```rust
-let val = map.get_mut("key").unwrap();
-map.insert("other", compute(val)); // ← E0499
-```
+use std::collections::HashMap;
 
-`get_mut`で得た`val`は`map`全体への`&mut`借用を保持する。その状態で`insert`を呼ぶのは2つ目の`&mut`になる。「同じキーじゃないから大丈夫では」と思うが、コンパイラはHashMapの内部実装を見ない。シグネチャだけで判断するため、`map`全体が占有されているとみなされる。
-
-**パターン3：ループ内での借用の延命**
-
-```rust
-for i in 0..v.len() {
-    let r = &mut v[i];
-    v.push(0); // ← E0499
+fn add_or_increment(map: &mut HashMap<String, u32>, key: &str) {
+    let entry = map.entry(key.to_string()).or_insert(0); // 可変借用①
+    *entry += 1;
+    // entry はまだここで生きている
+    map.remove("other_key"); // 可変借用②→ E0499
 }
 ```
 
-`r`がまだ有効なうちに`push`を呼ぶと二重借用になる。「ループの次のイテレーションでrを使わない」と人間には明らかでも、コンパイラは`r`の使用箇所を静的に追跡するため`push`の行の時点で「rはまだ生きている」と判断することがある。
+`entry` が生きている限り `map` への別の可変操作は通らない。「スコープを絞った」つもりでも `entry` の使用が後続行にある限りエラーは消えない。
 
-これらはいずれも「スコープを分ける」だけでは解決しない。根本的に構造を変える必要がある。
+### `clone()` で回避したが意図と違う結果になるケース
+
+`clone()` でデータをコピーすれば借用の競合は消えるが、クローン後に元データを変更しても参照先には反映されない。副作用を期待しているコードで静かにバグになる。
+
+### イテレータ中の変更
+
+コレクションをイテレートしながら同一コレクションに push や remove をしようとすると E0499 が出る。Java や Python では実行時例外になる操作をコンパイル時に弾く設計のため、「他言語では動いた」感覚のある開発者が最初に詰まるパターンだ。
 
 ---
 
 ## 完全な再現と修正コード
 
-### 最小再現コード
+### 最小再現コード（コンパイルエラーになる）
 
 ```rust
 fn main() {
-    let mut v: Vec<i32> = vec![1, 2, 3];
+    let mut numbers = vec![10, 20, 30];
 
-    let first = &mut v[0]; // 1回目の可変借用
-    let second = &mut v[1]; // E0499: cannot borrow `v` as mutable more than once at a time
+    // 要素への可変参照を取得
+    let first = &mut numbers[0];
 
-    *first += 10;
-    *second += 20;
-    println!("{:?}", v);
+    // 参照が生きている間にコレクション自体を変更しようとする
+    numbers.push(40); // error[E0499]
+
+    println!("first = {}", first);
 }
 ```
 
-上記は1回目の`first`が有効な間に2回目の`second`を取ろうとするためE0499が出る。
+コンパイルすると以下のメッセージが出る。
 
-### 修正コード（インデックス経由でアクセス）
+```
+error[E0499]: cannot borrow `numbers` as mutable more than once at a time
+ --> src/main.rs:7:5
+  |
+4 |     let first = &mut numbers[0];
+  |                      ------- first mutable borrow occurs here
+7 |     numbers.push(40);
+  |     ^^^^^^^ second mutable borrow occurs here
+9 |     println!("first = {}", first);
+  |                            ----- first borrow later used here
+```
+
+### 修正パターン①：先に操作を終わらせる
 
 ```rust
 fn main() {
-    let mut v: Vec<i32> = vec![1, 2, 3];
+    let mut numbers = vec![10, 20, 30];
 
-    // 参照を持つ代わりにインデックスで操作
-    v[0] += 10;
-    v[1] += 20;
-    println!("{:?}", v);
+    // push を先に済ませてから要素を参照する
+    numbers.push(40);
+
+    let first = &mut numbers[0];
+    *first *= 2;
+
+    println!("numbers = {:?}", numbers); // [20, 20, 30, 40]
 }
 ```
 
-参照を変数に保持しないことで借用が各ステートメントで完結し、重なりが生じない。
+参照を取る前に `push` を終わらせることで借用の競合がなくなる。
 
-### split_at_mutを使って同時に複数要素を操作する場合
+### 修正パターン②：インデックスでアクセスし参照を持ち越さない
 
 ```rust
 fn main() {
-    let mut v: Vec<i32> = vec![1, 2, 3];
+    let mut numbers = vec![10, 20, 30];
 
-    let (left, right) = v.split_at_mut(1);
-    let first = &mut left[0];
-    let second = &mut right[0]; // 異なるスライスなので安全
+    // 参照を変数に束縛せず、インデックスアクセスで完結させる
+    numbers[0] *= 2;
+    numbers.push(40);
 
-    *first += 10;
-    *second += 20;
-    println!("{:?}", v);
+    println!("numbers = {:?}", numbers); // [20, 20, 30, 40]
 }
 ```
 
-`split_at_mut`は内部でunsafeを使い、重ならないことを保証したうえで2つの`&mut`スライスを返す。コンパイラはこれを安全と判断できる。
-
-### HashMapのエントリ更新
+### 修正パターン③：`HashMap` の `entry` 競合を回避
 
 ```rust
 use std::collections::HashMap;
 
-fn main() {
-    let mut map: HashMap<&str, i32> = HashMap::new();
-    map.insert("a", 1);
+fn add_or_increment(map: &mut HashMap<String, u32>, key: &str) {
+    // entry の借用スコープをブロックで明示的に終わらせる
+    {
+        let entry = map.entry(key.to_string()).or_insert(0);
+        *entry += 1;
+    } // ここで entry が drop され、map への借用が解放される
 
-    // NG: get_mutの参照を保持したままinsert
-    // let val = map.get_mut("a").unwrap();
-    // map.insert("b", *val + 1); // E0499
-
-    // OK: entry APIを使う
-    map.entry("b").or_insert_with(|| {
-        let a = map["a"]; // ← これもE0499になる。下の方法を使う
-        a + 1
-    });
-    // 正しい方法: 先に値を読み出してから挿入
-    let a_val = map["a"];
-    map.entry("b").or_insert(a_val + 1);
-
-    println!("{:?}", map);
-}
-```
-
-必要な値を`&`で先に読み出し、可変借用が終わってから`entry`を呼ぶのが定石だ。
-
-### 構造体のフィールドを個別に借用する
-
-```rust
-struct State {
-    data: Vec<i32>,
-    cache: Vec<i32>,
-}
-
-impl State {
-    fn update(&mut self) {
-        // NG: selfを経由するメソッド2連鎖
-        // let d = self.get_data_mut();
-        // self.update_cache(d); // E0499
-
-        // OK: フィールドに直接アクセスして分割借用
-        let data = &mut self.data;
-        let cache = &mut self.cache;
-        for (i, d) in data.iter().enumerate() {
-            if let Some(c) = cache.get_mut(i) {
-                *c = *d * 2;
-            }
-        }
-    }
+    map.remove("other_key"); // これで通る
 }
 
 fn main() {
-    let mut s = State { data: vec![1, 2, 3], cache: vec![0, 0, 0] };
-    s.update();
-    println!("{:?}", s.cache);
+    let mut m = HashMap::new();
+    m.insert("other_key".to_string(), 99u32);
+    add_or_increment(&mut m, "target");
+    println!("{:?}", m);
 }
 ```
 
-フィールドに直接アクセスすれば、コンパイラは`self.data`と`self.cache`を独立した借用として扱える。
+ブロックが有効なのは、`entry` が `drop` されることで借用①が確実に終端するためだ。NLL だけに頼らず明示的にスコープを切るのが確実な手法になる。
 
 ---
 
 ## 本番投入前チェックリスト
 
-- [ ] 可変参照を変数に束縛するときに、その変数が本当に必要なだけの期間しか生きていないかを確認した（NLLが自動で短縮してくれることを期待しすぎない）
-- [ ] `&mut self`を取るメソッドが返す参照を変数に保持したまま、同じ`self`の別メソッドを呼んでいないかを確認した
-- [ ] `HashMap`や`BTreeMap`で`get_mut`の返り値を保持したままマップ全体を操作しようとしていないか確認し、必要であれば`entry` APIへ書き換えた
-- [ ] ループ内でコレクションへの参照とそのコレクションへの変更操作が混在していないかを確認した（参照の代わりにインデックスを使う方針に切り替えた）
-- [ ] 複数フィールドを同時に可変操作する必要がある場合は、メソッド越しでなくフィールドへの直接アクセスで分割借用できるか確認した
-- [ ] それでも解決できない場合は`RefCell<T>`（単一スレッド）または`Mutex<T>`（複数スレッド）による内部可変性パターンを検討したうえで、実行時パニックのリスクを把握した
-- [ ] `unsafe`を使って回避しようとしている場合、`split_at_mut`など標準ライブラリが提供する安全な代替手段を先にすべて検討した
+- [ ] コレクション要素への `&mut` 参照を変数に束縛した後、同一コレクションへの操作（`push` / `remove` / `insert` / `sort` など）を行っていないか確認する
+- [ ] `HashMap::entry()` / `BTreeMap::entry()` を使った後、同一マップを変更する処理がエントリ参照のスコープ外にあるかブロックで明示的に囲んであるか確認する
+- [ ] イテレータ（`iter_mut()` を含む）の生存中に同一コレクションへの変更操作が存在しないか確認する（必要なら `indices` を先に収集してから別ループで変更する）
+- [ ] `clone()` で回避した箇所が「本当にコピーで十分か」を設計意図と照合する（参照先への副作用が必要な箇所で誤用するとサイレントバグになる）
+- [ ] `RefCell<T>` / `Mutex<T>` を使って借用チェックを実行時に先送りした場合、`borrow_mut()` のパニック条件（複数の可変借用が同時に取られるケース）をテストで網羅しているか確認する
 
 ---
 
 ## 関連する2つのエラーへの応用
 
-### E0502: cannot borrow as mutable because it is also borrowed as immutable
+### error[E0502]: cannot borrow as immutable because it is also borrowed as mutable
 
 ```
-error[E0502]: cannot borrow `x` as mutable because it is also borrowed as immutable
+error[E0502]: cannot borrow `x` as immutable because it is also borrowed as mutable
 ```
 
-E0499が「可変 + 可変」の競合であるのに対し、E0502は「不変借用が生きている間に可変借用を取ろうとした」ケースだ。
+E0499 が「可変 vs 可変」の競合であるのに対し、E0502 は「可変借用が生きている間に不変借用を取ろうとした」場合に発生する。
 
 ```rust
 let mut v = vec![1, 2, 3];
-let r = &v[0];       // 不変借用
-v.push(4);           // 可変借用: E0502
-println!("{}", r);
+let m = &mut v;       // 可変借用
+let r = &v;           // E0502: 不変借用
+println!("{:?}", m);
 ```
 
-本記事の考え方をそのまま転用できる。`r`が必要な値は先にコピーしてしまい、不変借用を手放してから可変操作を行う。
+本記事と同じ解決アプローチが有効だ。**借用の生存区間を重複させないよう操作順を整理するか、明示的なブロックで可変借用を終端させる**。`m` を使い終えてから `r` を取るよう順番を変えれば解消する。
 
-```rust
-let mut v = vec![1, 2, 3];
-let val = v[0];      // 値をコピー（借用ではなくムーブまたはコピー）
-v.push(4);
-println!("{}", val);
-```
-
-`Copy`トレイトを実装している型（`i32`など）はこれで解決する。参照そのものが必要な場合は、操作の順序を入れ替えて借用が重ならないようにする発想はE0499と同じだ。
-
-### E0506: cannot assign to `x` because it is borrowed
+### error[E0506]: cannot move out of because it is borrowed
 
 ```
-error[E0506]: cannot assign to `x` because it is borrowed
+error[E0506]: cannot move out of `x` because it is borrowed
 ```
 
-変数に対する参照が生きている間に、その変数自体を上書き代入しようとするエラーだ。
+借用が生きている間に値の所有権を move しようとしたときに発生する。E0499 の「借用同士の競合」とは少し異なるが、根本原因は同じ「借用のライフタイムが重複している」点だ。
 
 ```rust
 let mut s = String::from("hello");
 let r = &s;
-s = String::from("world"); // E0506
+let owned = s; // E0506: r が生きている間に move
 println!("{}", r);
 ```
 
-一見E0499と別物に見えるが、根底の論理は同じだ。「既存の借用が有効な間はデータの所有権操作を許さない」というルールの別の現れに過ぎない。`s`を上書きするということは古いヒープデータが解放される可能性があり、`r`がダングリング参照になる恐れがある。解法も本記事と同じ方向性で、「`r`を使い終わるまで上書きを遅らせる」か「先に`r`の値を取り出してから上書きする」かのどちらかだ。E0499で身につけた「借用の重なりを時系列で考える」視点をそのまま適用すればよい。
+解決策も共通している。**参照 `r` の最後の使用を move より前に済ませるか、`clone()` で所有権を分離する**。NLL が参照の最終使用点を正しく検出できる単純なケースではコード順の調整だけで通ることが多い。複雑な制御フローでは明示的なブロックで借用を終端させる本記事のパターンがそのまま転用できる。
 
 ---
 
