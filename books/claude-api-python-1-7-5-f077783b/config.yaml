@@ -1,0 +1,13 @@
+title: "Claude API×Python で作る個人開発の収益自動化パイプライン――1記事7分・月5万円を目指す実装全手順"
+summary: "Claude APIとPythonで記事生成〜投稿〜収益計測までを完全自動化。実コード付きで環境構築から落とし穴まで解説し、個人開発者が稼げる自動化基盤を最短で手に入れる実践ガイド。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-claude-api
+  - 02-claude-api-python
+  - 03-chapter
+  - 04-github-actions-ci-cd
+  - 05-api
+  - 06-view
+  - 07-5-gumroad
