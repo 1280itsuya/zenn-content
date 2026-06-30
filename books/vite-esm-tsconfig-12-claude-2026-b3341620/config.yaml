@@ -1,0 +1,11 @@
+title: "Vite ESM tsconfigエラー12選Claude診断2026"
+summary: "Vite+ESM移行でよく詰まるtsconfig/jsconfig設定エラー12パターンを、実測ロスト時間付きで網羅。moduleResolution「bundler」対応・pathsエイリアス崩壊・型インポートエラーをコピペ1発で解決するスニペット集と、Claude Code MCPでエラーログを自動診断するツールキットを実装しながら習得できる実践書。"
+topics: ["typescript", "javascript", "claudecode", "automation", "devops"]
+published: true
+price: 500
+chapters:
+  - 01-1-cannot-find-module-moduleresolution-2
+  - 02-2-moduleresolution-bundler-12-vite-5-6-1
+  - 03-3-paths-jsconfig-json-vs-tsconfig-json-3
+  - 04-4-claude-code-mcp-tsconfig-30-87-1-2
+  - 05-5-github-actions-ci-issue-pr-tsc-73-11
