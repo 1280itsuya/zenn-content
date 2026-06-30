@@ -1,0 +1,11 @@
+title: "Vite+TypeScript全17エラー最短解決チートシート2026"
+summary: "Vite+ESM環境で実務エンジニアが踏むtsconfig/jsconfigの全17エラーパターンを網羅。パスエイリアス崩壊・ESM/CJS混在・GitHub Actions再現不能エラー・Claude Code補完崩壊まで、コピペ即動作の修正コードと診断スクリプト付きで解説。読了後はゼロからチームに展開できる設定テンプレート3種を取得でき、「なぜかCIでだけ壊れる」問題を定量ログで自力診断できるようになる。"
+topics: ["typescript", "ai", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-1-vite-esm-tsconfig-5-17-3
+  - 02-2-resolve-alias-tsconfig-paths-7
+  - 03-3-err-require-esm-package-json-type-modu
+  - 04-4-github-actions-tsconfig-4-ubuntu-lates
+  - 05-5-claude-code-python-30-tsconfig-ai-pre
