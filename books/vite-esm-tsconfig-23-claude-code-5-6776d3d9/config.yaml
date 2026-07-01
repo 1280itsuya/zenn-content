@@ -1,0 +1,11 @@
+title: "Vite+ESM: tsconfig 23エラーをClaude Codeで5分解決"
+summary: "Vite 6×TypeScript 5.8のESM環境で実際に踏んだ23種のエラーをエラーメッセージ逆引きで即解決できる実践書。tsconfig/jsconfigの設定差分コードをそのまま貼り付けるだけで動く構成にし、Claude Code向けプロンプト5本とGitHub Actionsテンプレートで「同じエラーを二度踏まない」自動化ラインまで完成できる。概念解説ゼロ、コードと数値のみで構成。"
+topics: ["typescript", "claude", "javascript", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-vite-6-node-22-esm-5
+  - 02-tsconfig-json-esm-moduleresolution-bundl
+  - 03-jsconfig-json-8-typescript
+  - 04-claude-code-5-tsconfig-30
+  - 05-github-actions-vite-plugin-checker-ci-ts
