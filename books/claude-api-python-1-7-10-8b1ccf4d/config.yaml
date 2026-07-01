@@ -1,0 +1,12 @@
+title: "Claude API×Pythonで作る副業コンテンツ自動量産パイプライン——1記事7分・月10万円を狙う個人開発完全ガイド"
+summary: "Claude APIとPythonで記事生成→投稿→収益化を全自動化する実践書。GitHubActionsで毎朝無人稼働させ、Zenn・Qiitaへの投稿から収益計測まで一気通しで構築する。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-claude-api-python
+  - 02-claude-api
+  - 03-python-claude-api
+  - 05-ban
+  - 06-zenn-qiita-view
+  - 07-10-gumroad-booth
