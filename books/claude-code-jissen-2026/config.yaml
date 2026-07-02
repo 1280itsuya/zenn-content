@@ -1,0 +1,21 @@
+title: "Claude Code実践入門：毎朝AIが働く仕組みをつくる"
+summary: "「AIにコードを書かせてみた」で終わらせず、「AIが毎朝勝手に働く仕組み」まで作り込む——本書はAnthropic公式のCLIエージェント「Claude Code」を、日常の対話的コーディングから、スクリプト連携(claude -p)、hooksによる品質ゲート、MCPによる外部サービス接続、そしてWindowsタスクスケジューラでの無人運用まで、三つの段階で身につける実践ガイドです。
+
+題材はすべて、著者が自宅のWindows PCで毎日実際に動かしている自動化パイプラインです。記事の自動生成と投稿、800ページ超のエラー解決サイトの自動生成、機械学習モデルとの役割分担。成功例だけでなく、AIによる数値の捏造、パイプ待ちの無言ハング、認証ダイアログ待ちで止まった夜など、実際に踏んだ失敗とその再発防止策を隠さず共有します。
+
+【本書で学べること】
+・チャットAIとエージェント型CLIの決定"
+topics: ["claudecode", "claude", "ai", "automation"]
+published: true
+price: 500
+chapters:
+  - 01-chapter
+  - 02-chapter
+  - 03-chapter
+  - 04-chapter
+  - 05-chapter
+  - 06-chapter
+  - 07-chapter
+  - 08-chapter
+  - 09-chapter
+  - 10-chapter
