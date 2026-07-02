@@ -1,0 +1,12 @@
+title: "1コードでWan/SDXL/Flux切替：失敗7回でたどり着いた設計"
+summary: "Diffusers の Wan 2.2・SDXL・Flux API を単一の Provider Dispatch クラスで切り替える実装パターンを完全解説。抽象基底クラス設計・env 一元管理・pytest 29本・半年運用コスト実績まで、動くコードと実測値だけで構成。segfault 回避・API フォールバック・日本語プロンプト変換の実対策も収録。"
+topics: ["python", "ai", "automation", "mlops", "llm"]
+published: true
+price: 500
+chapters:
+  - 01-3-provider-dispatch
+  - 02-baseimageprovider-generate-1-3
+  - 03-wan-2-2-14b-rtx-5090-segfault-offload
+  - 04-sdxl-turbo-flux-api-steps-4
+  - 05-env-pydantic-settings-pytest-29
+  - 06-47-200-3-2-7
