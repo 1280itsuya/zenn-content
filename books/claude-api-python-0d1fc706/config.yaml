@@ -1,0 +1,12 @@
+title: "Claude API×Pythonで作るアフィリ記事量産パイプライン完全実装ガイド"
+summary: "Claude APIとPythonで1記事7分の半自動アフィリ記事生成パイプラインをゼロから構築。設計・実装・コスト最適化・落とし穴まで実体験ベースで解説する個人開発者向け実践書。"
+topics: ["ai", "claude", "automation", "python", "individualdev"]
+published: true
+price: 500
+chapters:
+  - 01-claude-api
+  - 02-python-claude-api
+  - 03-chapter
+  - 04-llm-as-judge
+  - 05-1
+  - 06-7
